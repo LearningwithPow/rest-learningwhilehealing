@@ -38,27 +38,19 @@ const HeroSection = () => {
         </motion.h1>
         
         <motion.p
-          className="font-serif text-xl md:text-2xl lg:text-3xl text-foreground/80 italic mb-4"
+          className="font-serif text-lg md:text-xl lg:text-2xl text-foreground/80 italic mb-10 max-w-xl leading-relaxed"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6, ease: [0.25, 0.4, 0.25, 1] }}
         >
-          A Guided Inner Decluttering Experience
-        </motion.p>
-        
-        <motion.p
-          className="text-lg md:text-xl text-muted-foreground max-w-lg mb-10"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.8, ease: [0.25, 0.4, 0.25, 1] }}
-        >
-          Sort what's heavy with compassion and clarity.
+          A guided inner decluttering experience to help you sort emotional and mental clutter 
+          with compassion — and experience lightness, clarity, and self-acceptance.
         </motion.p>
         
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 1, ease: [0.25, 0.4, 0.25, 1] }}
+          transition={{ duration: 0.8, delay: 0.8, ease: [0.25, 0.4, 0.25, 1] }}
         >
           <Button variant="calm" size="calm">
             Join REST Reset
