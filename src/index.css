@@ -10,7 +10,7 @@
   :root {
     /* Pastel palette: lavender, cream, soft sage, muted neutrals */
     --background: 40 30% 97%;
-    --foreground: 260 15% 25%;
+    --foreground: 260 18% 18%;
 
     --card: 40 25% 98%;
     --card-foreground: 260 15% 25%;
@@ -28,7 +28,7 @@
 
     /* Soft sage muted */
     --muted: 160 25% 88%;
-    --muted-foreground: 260 12% 45%;
+    --muted-foreground: 260 15% 38%;
 
     /* Lavender accent */
     --accent: 270 35% 85%;
