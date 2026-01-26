@@ -6,7 +6,7 @@ const FinalCtaSection = () => {
     <section className="section-calm bg-card">
       <div className="max-w-3xl mx-auto text-center">
         <ScrollReveal>
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground mb-6 leading-tight">
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-6 leading-tight">
             You don't have to carry everything alone
           </h2>
         </ScrollReveal>

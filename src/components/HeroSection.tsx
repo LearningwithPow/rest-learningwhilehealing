@@ -12,8 +12,11 @@ const HeroSection = () => {
           alt="A woman sitting peacefully by a window, looking calm and reflective"
           className="w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/70 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-background/30" />
+        {/* Enhanced overlays for better text readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/20 md:from-background/90 md:via-background/65 md:to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-background/30 to-background/40" />
+        {/* Additional mobile overlay for text area */}
+        <div className="absolute inset-0 md:hidden bg-gradient-to-b from-background/50 via-transparent to-transparent" />
       </div>
 
       {/* Content */}
@@ -29,7 +32,7 @@ const HeroSection = () => {
         </motion.div>
         
         <motion.h1
-          className="font-serif text-5xl md:text-6xl lg:text-7xl font-medium text-foreground mb-6"
+          className="font-serif text-5xl md:text-6xl lg:text-7xl font-semibold text-foreground mb-6 drop-shadow-sm"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4, ease: [0.25, 0.4, 0.25, 1] }}
@@ -38,7 +41,7 @@ const HeroSection = () => {
         </motion.h1>
         
         <motion.p
-          className="font-serif text-lg md:text-xl lg:text-2xl text-foreground/80 italic mb-10 max-w-xl leading-relaxed"
+          className="font-serif text-lg md:text-xl lg:text-2xl text-foreground/90 italic mb-10 max-w-xl leading-relaxed drop-shadow-sm"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6, ease: [0.25, 0.4, 0.25, 1] }}

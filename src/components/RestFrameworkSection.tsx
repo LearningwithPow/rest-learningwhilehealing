@@ -6,13 +6,13 @@ const RestFrameworkSection = () => {
     <section className="section-calm bg-card">
       <div className="max-w-5xl mx-auto">
         <ScrollReveal>
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground mb-6 text-center">
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-6 text-center">
             The REST Framework
           </h2>
         </ScrollReveal>
         
         <ScrollReveal delay={0.1}>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-12 leading-relaxed text-center">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-12 leading-relaxed text-center font-normal">
             REST is a gentle, step-by-step process that helps you move from overwhelm 
             toward clarity — beginning with safety and ending with compassion.
           </p>
@@ -66,35 +66,35 @@ const RestFrameworkSection = () => {
           <ScrollReveal delay={0.5}>
             <div className="rest-card-s p-6 rounded-2xl">
               <div className="flex items-start gap-4">
-                <span className="font-serif text-4xl font-semibold flex-shrink-0">S</span>
-                <div>
+                <span className="font-serif text-4xl font-semibold flex-shrink-0 min-w-[2rem]">S</span>
+                <div className="flex-1">
                   <h3 className="font-semibold text-xl mb-2">Separate</h3>
                   <p className="opacity-90 leading-relaxed mb-4">
                     Sort what's inside with wisdom and care:
                   </p>
-                  <ul className="space-y-2 opacity-90">
-                    <li className="flex items-start gap-2">
-                      <span className="mt-1.5">•</span>
-                      <span>What is life-giving</span>
+                  <ul className="space-y-2.5 opacity-90">
+                    <li className="flex items-start gap-3">
+                      <span className="flex-shrink-0 mt-1">•</span>
+                      <span className="leading-relaxed">What is life-giving</span>
                     </li>
-                    <li className="flex items-start gap-2">
-                      <span className="mt-1.5">•</span>
-                      <span>What can be released</span>
+                    <li className="flex items-start gap-3">
+                      <span className="flex-shrink-0 mt-1">•</span>
+                      <span className="leading-relaxed">What can be released</span>
                     </li>
-                    <li className="flex items-start gap-2">
-                      <span className="mt-1.5">•</span>
-                      <span>What may be shared when ready</span>
+                    <li className="flex items-start gap-3">
+                      <span className="flex-shrink-0 mt-1">•</span>
+                      <span className="leading-relaxed">What may be shared when ready</span>
                     </li>
-                    <li className="flex items-start gap-2">
-                      <span className="mt-1.5">•</span>
-                      <span>What needs time, not pressure</span>
+                    <li className="flex items-start gap-3">
+                      <span className="flex-shrink-0 mt-1">•</span>
+                      <span className="leading-relaxed">What needs time, not pressure</span>
                     </li>
-                    <li className="flex items-start gap-2">
-                      <span className="mt-1.5">•</span>
-                      <span>And what may be renewed rather than thrown away</span>
+                    <li className="flex items-start gap-3">
+                      <span className="flex-shrink-0 mt-1">•</span>
+                      <span className="leading-relaxed">And what may be renewed rather than thrown away</span>
                     </li>
                   </ul>
-                  <p className="opacity-90 mt-4 italic">
+                  <p className="opacity-90 mt-4 italic leading-relaxed">
                     Not everything needs to be removed.<br />
                     Some things are simply waiting to be renewed.
                   </p>
