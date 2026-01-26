@@ -27,11 +27,11 @@ const HowItWorksSection = () => {
             <div className="flex flex-col gap-4 mb-10">
               {details.map((item, index) => (
                 <ScrollReveal key={index} delay={0.1 + index * 0.1}>
-                  <div className="flex items-center gap-4 text-foreground">
-                    <div className="w-12 h-12 rounded-full bg-accent flex items-center justify-center flex-shrink-0">
+                  <div className="flex items-start gap-4 text-foreground">
+                    <div className="w-12 h-12 min-w-[3rem] rounded-full bg-accent flex items-center justify-center flex-shrink-0">
                       <item.icon className="w-5 h-5 text-accent-foreground" />
                     </div>
-                    <span className="text-lg">{item.text}</span>
+                    <span className="text-lg leading-relaxed pt-2.5">{item.text}</span>
                   </div>
                 </ScrollReveal>
               ))}
