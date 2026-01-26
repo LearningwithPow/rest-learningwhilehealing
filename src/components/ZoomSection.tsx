@@ -11,14 +11,13 @@ const ZoomSection = () => {
           <div className="text-center md:text-left">
             <ScrollReveal>
               <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground mb-6 leading-tight">
-                A safe space to share
+                How it works
               </h2>
             </ScrollReveal>
             
             <ScrollReveal delay={0.1}>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8">
-                REST Reset is a live, guided experience where you're held with care. 
-                You'll never be put on the spot or rushed—only invited to be present with yourself.
+                REST Reset is a live, guided group experience held online.
               </p>
             </ScrollReveal>
 
