@@ -4,7 +4,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const HowItWorksSection = () => {
   const details = [
-    { icon: Calendar, text: "5-day guided experience" },
+    { icon: Calendar, text: "4-day guided experience" },
     { icon: Clock, text: "90 minutes per session" },
     { icon: Video, text: "Live via Zoom" },
     { icon: Users, text: "Small group only" },
