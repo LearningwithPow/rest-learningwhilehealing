@@ -6,7 +6,7 @@ import DetailsPricingSection from "@/components/DetailsPricingSection";
 import WalkAwaySection from "@/components/WalkAwaySection";
 import WhatItIsSection from "@/components/WhatItIsSection";
 import RestFrameworkSection from "@/components/RestFrameworkSection";
-import HowItWorksSection from "@/components/HowItWorksSection";
+
 import BeforeYouJoinSection from "@/components/BeforeYouJoinSection";
 import FinalCtaSection from "@/components/FinalCtaSection";
 
@@ -21,7 +21,7 @@ const Index = () => {
       <WalkAwaySection />
       <WhatItIsSection />
       <RestFrameworkSection />
-      <HowItWorksSection />
+      
       <BeforeYouJoinSection />
       <FinalCtaSection />
     </main>
