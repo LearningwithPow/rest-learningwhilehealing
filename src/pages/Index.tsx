@@ -4,6 +4,7 @@ import ForYouIfSection from "@/components/ForYouIfSection";
 import WhatItIsSection from "@/components/WhatItIsSection";
 import RestFrameworkSection from "@/components/RestFrameworkSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
+import BeforeYouJoinSection from "@/components/BeforeYouJoinSection";
 import FinalCtaSection from "@/components/FinalCtaSection";
 
 const Index = () => {
@@ -15,6 +16,7 @@ const Index = () => {
       <WhatItIsSection />
       <RestFrameworkSection />
       <HowItWorksSection />
+      <BeforeYouJoinSection />
       <FinalCtaSection />
     </main>
   );
