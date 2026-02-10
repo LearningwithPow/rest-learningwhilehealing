@@ -46,8 +46,8 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6, ease: [0.25, 0.4, 0.25, 1] }}
         >
-          A guided inner decluttering experience to help you sort emotional and mental clutter 
-          with compassion — and experience lightness, clarity, and self-acceptance.
+          A structured 4-day group coaching experience to help you move from insight 
+          to integration and experience inner order, clarity, and self-acceptance.
         </motion.p>
         
         <motion.div
@@ -55,9 +55,11 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8, ease: [0.25, 0.4, 0.25, 1] }}
         >
-          <Button variant="calm" size="calm">
-            Join REST Reset
-          </Button>
+          <a href="https://your-xendit-link-here" target="_blank" rel="noopener noreferrer">
+            <Button variant="calm" size="calm">
+              Join REST Reset
+            </Button>
+          </a>
         </motion.div>
       </div>
 

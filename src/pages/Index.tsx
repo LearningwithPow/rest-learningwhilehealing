@@ -1,6 +1,9 @@
 import HeroSection from "@/components/HeroSection";
 import IntroSection from "@/components/IntroSection";
 import ForYouIfSection from "@/components/ForYouIfSection";
+import FromAwarenessSection from "@/components/FromAwarenessSection";
+import DetailsPricingSection from "@/components/DetailsPricingSection";
+import WalkAwaySection from "@/components/WalkAwaySection";
 import WhatItIsSection from "@/components/WhatItIsSection";
 import RestFrameworkSection from "@/components/RestFrameworkSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
@@ -13,6 +16,9 @@ const Index = () => {
       <HeroSection />
       <IntroSection />
       <ForYouIfSection />
+      <FromAwarenessSection />
+      <DetailsPricingSection />
+      <WalkAwaySection />
       <WhatItIsSection />
       <RestFrameworkSection />
       <HowItWorksSection />

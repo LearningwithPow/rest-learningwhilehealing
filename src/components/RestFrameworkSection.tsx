@@ -14,7 +14,7 @@ const RestFrameworkSection = () => {
         <ScrollReveal delay={0.1}>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-12 leading-relaxed text-center font-normal">
             REST is a gentle, step-by-step process that helps you move from overwhelm 
-            toward clarity — beginning with safety and ending with compassion.
+            toward clarity, beginning with safety and ending with compassion.
           </p>
         </ScrollReveal>
 
