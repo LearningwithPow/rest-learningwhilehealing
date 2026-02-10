@@ -26,7 +26,7 @@ const IntroSection = () => {
         
         <ScrollReveal delay={0.3}>
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-            This experience offers a gentle pause — a space to sort what's been weighing 
+            This experience offers a gentle pause, a space to sort what's been weighing 
             on you with compassion, structure, and care.
           </p>
         </ScrollReveal>

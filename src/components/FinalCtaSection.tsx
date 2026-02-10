@@ -26,9 +26,11 @@ const FinalCtaSection = () => {
         </ScrollReveal>
         
         <ScrollReveal delay={0.3}>
-          <Button variant="calm" size="calm">
-            Join REST Reset
-          </Button>
+          <a href="https://your-xendit-link-here" target="_blank" rel="noopener noreferrer">
+            <Button variant="calm" size="calm">
+              Join REST Reset
+            </Button>
+          </a>
         </ScrollReveal>
         
         {/* Footer */}
