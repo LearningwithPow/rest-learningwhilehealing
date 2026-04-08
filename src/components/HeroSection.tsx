@@ -41,7 +41,7 @@ const HeroSection = () => {
         </motion.h1>
         
         <motion.p
-          className="font-serif text-lg md:text-xl lg:text-2xl text-foreground/90 italic mb-10 max-w-xl leading-relaxed drop-shadow-sm"
+          className="font-serif text-lg md:text-xl lg:text-2xl text-foreground/90 italic mb-0 max-w-xl leading-relaxed drop-shadow-sm"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6, ease: [0.25, 0.4, 0.25, 1] }}
@@ -49,18 +49,6 @@ const HeroSection = () => {
           A structured 3-day group coaching experience to help you move from insight 
           to integration and experience inner order, clarity, and self-acceptance.
         </motion.p>
-        
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.8, ease: [0.25, 0.4, 0.25, 1] }}
-        >
-          <a href="https://checkout.xendit.co/od/Rest_Reset_EarlyBird" target="_blank" rel="noopener noreferrer">
-            <Button variant="calm" size="calm">
-              Reserve Your Spot
-            </Button>
-          </a>
-        </motion.div>
       </div>
 
       {/* Scroll indicator */}
