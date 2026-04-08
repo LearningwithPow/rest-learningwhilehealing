@@ -12,7 +12,7 @@ const IntroSection = () => {
         
         <ScrollReveal delay={0.1}>
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-6 font-normal">
-            REST Reset is created for women who feel emotionally heavy, mentally cluttered, 
+            REST Reset is created for individuals who feel emotionally heavy, mentally cluttered, 
             and quietly longing for clarity. You are self-aware. You've reflected. 
             You've tried to understand yourself.
           </p>
