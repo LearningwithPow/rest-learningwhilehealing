@@ -55,9 +55,9 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8, ease: [0.25, 0.4, 0.25, 1] }}
         >
-          <a href="https://your-xendit-link-here" target="_blank" rel="noopener noreferrer">
+          <a href="https://checkout.xendit.co/od/Rest_Reset_EarlyBird" target="_blank" rel="noopener noreferrer">
             <Button variant="calm" size="calm">
-              Join REST Reset
+              Reserve Your Spot
             </Button>
           </a>
         </motion.div>

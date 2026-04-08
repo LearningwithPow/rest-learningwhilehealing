@@ -63,13 +63,13 @@ const DetailsPricingSection = () => {
 
         {/* CTA */}
         <ScrollReveal delay={0.35}>
-          <a href="https://your-xendit-link-here" target="_blank" rel="noopener noreferrer">
+          <a href="https://checkout.xendit.co/od/Rest_Reset_EarlyBird" target="_blank" rel="noopener noreferrer">
             <Button variant="calm" size="calm">
-              Join REST Reset
+              Reserve Your Spot
             </Button>
           </a>
           <p className="text-sm text-muted-foreground mt-4">
-            Secure your spot. Small group only.
+            Secure your spot while early bird is available.
           </p>
         </ScrollReveal>
       </div>
