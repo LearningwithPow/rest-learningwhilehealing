@@ -23,7 +23,7 @@ const BeforeYouJoinSection = () => {
             </div>
 
             <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
-              To join, you should have attended a <span className="font-semibold text-foreground">Declutter to Clarity</span> live session.
+              To join, you should have attended a <span className="font-semibold text-foreground">Declutter to Clarity</span> live session first.
             </p>
 
             <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
@@ -31,7 +31,7 @@ const BeforeYouJoinSection = () => {
             </p>
 
             <p className="text-lg md:text-xl leading-relaxed text-foreground font-medium">
-              If you haven't joined Declutter yet, you can attend the next session on <span className="text-primary">Feb 24</span> before REST Reset begins on <span className="text-primary">March 10</span>.
+              If you haven't joined Declutter yet, you may attend the next available session before REST Reset begins.
             </p>
           </div>
         </ScrollReveal>

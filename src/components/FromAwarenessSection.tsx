@@ -20,7 +20,7 @@ const FromAwarenessSection = () => {
 
         <ScrollReveal delay={0.1}>
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-10">
-            REST Reset is a structured 4-day group coaching experience that helps you move 
+            REST Reset is a structured 3-day group coaching experience that helps you move 
             from insight to integration so you don't just understand yourself, you begin to 
             experience inner order and clarity.
           </p>
