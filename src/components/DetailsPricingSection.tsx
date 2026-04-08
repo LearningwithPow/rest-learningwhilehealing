@@ -55,7 +55,7 @@ const DetailsPricingSection = () => {
                 Regular: ₱1,499
               </p>
               <p className="text-sm text-muted-foreground mt-1">
-                Early bird until April 22
+                Early bird until April 24
               </p>
             </div>
           </div>
