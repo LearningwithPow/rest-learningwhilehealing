@@ -7,7 +7,7 @@ const DetailsPricingSection = () => {
     { icon: Video, text: "Live via Zoom" },
     { icon: Users, text: "Small group only" },
     { icon: Clock, text: "2 hours per session" },
-    { icon: Calendar, text: "7:30 – 9:30 PM" },
+    { icon: Calendar, text: "Tuesday to Thursday, 7:30 – 9:30 PM" },
   ];
 
   return (
@@ -15,13 +15,13 @@ const DetailsPricingSection = () => {
       <div className="max-w-3xl mx-auto text-center">
         <ScrollReveal>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-3 leading-tight">
-            REST Reset — March 10–13
+            REST Reset — April 28–30, 2026
           </h2>
         </ScrollReveal>
 
         <ScrollReveal delay={0.1}>
           <p className="text-lg md:text-xl text-muted-foreground mb-10">
-            4-day guided group coaching experience
+            3-day guided group coaching experience
           </p>
         </ScrollReveal>
 
@@ -55,7 +55,7 @@ const DetailsPricingSection = () => {
                 Regular: ₱1,499
               </p>
               <p className="text-sm text-muted-foreground mt-1">
-                Early bird until Feb 28
+                Early bird until April 22
               </p>
             </div>
           </div>
