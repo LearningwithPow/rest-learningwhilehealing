@@ -26,9 +26,9 @@ const FinalCtaSection = () => {
         </ScrollReveal>
         
         <ScrollReveal delay={0.3}>
-          <a href="https://your-xendit-link-here" target="_blank" rel="noopener noreferrer">
+          <a href="https://checkout.xendit.co/od/Rest_Reset_EarlyBird" target="_blank" rel="noopener noreferrer">
             <Button variant="calm" size="calm">
-              Join REST Reset
+              Reserve Your Spot
             </Button>
           </a>
         </ScrollReveal>
