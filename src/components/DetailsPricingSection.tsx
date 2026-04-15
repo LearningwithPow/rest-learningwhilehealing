@@ -1,6 +1,7 @@
 import { Video, Users, Clock, Calendar, Sparkles, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ScrollReveal from "@/components/ScrollReveal";
+import zoomSessionImg from "@/assets/zoom-coaching-session.jpg";
 
 const DetailsPricingSection = () => {
   const details = [
