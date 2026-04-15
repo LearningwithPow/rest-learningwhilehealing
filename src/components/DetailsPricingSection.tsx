@@ -74,7 +74,7 @@ const DetailsPricingSection = () => {
           <div className="flex items-center justify-center gap-2 mt-4 text-muted-foreground/70">
             <ShieldCheck className="w-4 h-4 flex-shrink-0" />
             <p className="text-xs">
-              Secure checkout via Xendit. GCash, Maya, QRPH, and debit/credit card payments accepted.
+              Secure checkout via Xendit. GCash, Maya, QRPH, and debit card payments accepted.
             </p>
           </div>
         </ScrollReveal>
