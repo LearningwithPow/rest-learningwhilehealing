@@ -26,9 +26,11 @@ const FinalCtaSection = () => {
         </ScrollReveal>
         
         <ScrollReveal delay={0.2}>
-          <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-10">
-            Limited slots only to keep the space safe and intentional.
-          </p>
+          <div className="bg-[hsl(270,30%,95%)] rounded-2xl px-6 py-4 mb-10 inline-block">
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+              Limited slots only to keep the space safe and intentional.
+            </p>
+          </div>
         </ScrollReveal>
         
         <ScrollReveal delay={0.3}>
