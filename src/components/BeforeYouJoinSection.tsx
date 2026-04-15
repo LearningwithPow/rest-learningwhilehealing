@@ -18,20 +18,21 @@ const BeforeYouJoinSection = () => {
                 <Info className="w-5 h-5 text-accent-foreground" />
               </div>
               <p className="text-lg md:text-xl leading-relaxed text-foreground pt-2">
-                REST Reset is designed as a deeper, guided experience.
+                REST Reset is designed for those who have already begun their inner clarity work.
               </p>
             </div>
 
             <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
-              To join, you should have attended a <span className="font-semibold text-foreground">Declutter to Clarity</span> live session first.
+              To join, you must have completed one of the following:
             </p>
+
+            <ul className="text-lg md:text-xl leading-relaxed text-muted-foreground space-y-2 pl-2">
+              <li>• <span className="font-semibold text-foreground">Declutter to Clarity</span> (group session), or</li>
+              <li>• At least one <span className="font-semibold text-foreground">1:1 CBT Coaching Session</span></li>
+            </ul>
 
             <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
-              This ensures everyone comes in with the same foundation, so we can go deeper together in a safe, structured way.
-            </p>
-
-            <p className="text-lg md:text-xl leading-relaxed text-foreground font-medium">
-              If you haven't joined Declutter yet, you may attend the next available session before REST Reset begins.
+              This ensures every participant enters with the same level of awareness, allowing for deeper and more meaningful transformation.
             </p>
           </div>
         </ScrollReveal>
