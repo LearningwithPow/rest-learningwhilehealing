@@ -18,10 +18,16 @@ const FinalCtaSection = () => {
           </p>
         </ScrollReveal>
         
+        <ScrollReveal delay={0.15}>
+          <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-6">
+            If you feel ready to create a little more space within, 
+            you are welcome here.
+          </p>
+        </ScrollReveal>
+        
         <ScrollReveal delay={0.2}>
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-10">
-            If you feel ready to create a little more space within, 
-            you are warmly welcome here.
+            Limited slots only to keep the space safe and intentional.
           </p>
         </ScrollReveal>
         
