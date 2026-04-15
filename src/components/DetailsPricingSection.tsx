@@ -1,4 +1,4 @@
-import { Video, Users, Clock, Calendar, Sparkles } from "lucide-react";
+import { Video, Users, Clock, Calendar, Sparkles, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ScrollReveal from "@/components/ScrollReveal";
 
@@ -71,6 +71,12 @@ const DetailsPricingSection = () => {
           <p className="text-sm text-muted-foreground mt-4">
             Secure your spot while early bird is available.
           </p>
+          <div className="flex items-center justify-center gap-2 mt-4 text-muted-foreground/70">
+            <ShieldCheck className="w-4 h-4 flex-shrink-0" />
+            <p className="text-xs">
+              Secure checkout via Xendit. GCash, Maya, QRPH, and debit/credit card payments accepted.
+            </p>
+          </div>
         </ScrollReveal>
       </div>
     </section>
