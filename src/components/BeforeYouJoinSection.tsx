@@ -28,7 +28,7 @@ const BeforeYouJoinSection = () => {
 
             <ul className="text-lg md:text-xl leading-relaxed text-muted-foreground space-y-2 pl-2">
               <li>• <span className="font-semibold text-foreground">Declutter to Clarity</span> (live session), or</li>
-              <li>• At least one <span className="font-semibold text-foreground">1:1 CBT Coaching Session</span></li>
+              <li>• At least one <span className="font-semibold text-foreground">1:1 CBT Coaching Session with Coach Pow</span></li>
             </ul>
 
             <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
