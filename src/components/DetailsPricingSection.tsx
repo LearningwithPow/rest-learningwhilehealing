@@ -40,7 +40,19 @@ const DetailsPricingSection = () => {
           </div>
         </ScrollReveal>
 
-        {/* Pricing card */}
+        {/* Zoom session image */}
+        <ScrollReveal delay={0.2}>
+          <div className="max-w-lg mx-auto mb-10 rounded-2xl overflow-hidden shadow-soft">
+            <img
+              src={zoomSessionImg}
+              alt="A calm, intimate group coaching session on Zoom"
+              loading="lazy"
+              width={1024}
+              height={576}
+              className="w-full h-auto opacity-90"
+            />
+          </div>
+        </ScrollReveal>
         <ScrollReveal delay={0.25}>
           <div className="bg-background rounded-2xl p-8 md:p-10 shadow-soft max-w-md mx-auto mb-8">
             <div className="flex items-center justify-center gap-2 mb-6">
