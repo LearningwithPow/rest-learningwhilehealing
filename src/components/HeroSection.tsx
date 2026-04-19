@@ -32,23 +32,45 @@ const HeroSection = () => {
         </motion.div>
         
         <motion.h1
-          className="font-serif text-5xl md:text-6xl lg:text-7xl font-semibold text-foreground mb-6 drop-shadow-sm"
+          className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-foreground mb-6 drop-shadow-sm leading-[1.15]"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4, ease: [0.25, 0.4, 0.25, 1] }}
         >
-          REST Reset
+          Feel Mentally Tired, Emotionally Heavy, and Stuck in Overthinking?
         </motion.h1>
         
         <motion.p
-          className="font-serif text-lg md:text-xl lg:text-2xl text-foreground/90 italic mb-0 max-w-xl leading-relaxed drop-shadow-sm"
+          className="font-serif text-lg md:text-xl lg:text-2xl text-foreground/90 italic mb-8 max-w-xl leading-relaxed drop-shadow-sm"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6, ease: [0.25, 0.4, 0.25, 1] }}
         >
-          A structured 3-day group coaching experience to help you move from insight 
-          to integration and experience inner order, clarity, and self-acceptance.
+          REST Reset helps you calm your nervous system, clear your mind, and feel 
+          like yourself again in 3 guided evenings.
         </motion.p>
+
+        <motion.ul
+          className="flex flex-col gap-2 max-w-xl mx-auto md:mx-0 text-left"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.8, ease: [0.25, 0.4, 0.25, 1] }}
+        >
+          {[
+            "Live guided by Coach Pow",
+            "Faith + CBT + Mindfulness tools",
+            "Safe small group environment",
+            "Beginner friendly",
+          ].map((item) => (
+            <li
+              key={item}
+              className="flex items-start gap-2 text-base md:text-lg text-foreground/90"
+            >
+              <span className="text-primary/80 flex-shrink-0 mt-0.5">✓</span>
+              <span>{item}</span>
+            </li>
+          ))}
+        </motion.ul>
       </div>
 
       {/* Scroll indicator */}

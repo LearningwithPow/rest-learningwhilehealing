@@ -8,14 +8,14 @@ const FinalCtaSection = () => {
       <div className="max-w-3xl mx-auto text-center">
         <ScrollReveal>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-6 leading-tight">
-            You don't have to carry everything alone
+            You do not need to carry stress alone anymore.
           </h2>
         </ScrollReveal>
         
         <ScrollReveal delay={0.1}>
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-6">
-            REST Reset is an invitation to pause, breathe, and gently untangle 
-            what has been weighing on your heart and mind.
+            Join REST Reset and give your mind, body, and soul room to 
+            breathe again.
           </p>
         </ScrollReveal>
         
