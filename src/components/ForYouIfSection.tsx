@@ -2,12 +2,14 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const ForYouIfSection = () => {
   const points = [
+    "You overthink often",
+    "You feel emotionally heavy",
+    "You are mentally tired",
+    "You need peace again",
+    "You want support",
     "You feel stuck but deeply self-aware",
-    "Your mind feels full even when life looks okay",
     "You long for emotional order, not quick fixes",
-    "You desire clarity without pressure",
     "You want a safe, grounded space to reflect",
-    "You believe God is a God of order, not confusion",
   ];
 
   return (
@@ -15,7 +17,7 @@ const ForYouIfSection = () => {
       <div className="max-w-3xl mx-auto text-center">
         <ScrollReveal>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-12 leading-tight">
-            This Experience Is For You If…
+            REST Reset Is For You If…
           </h2>
         </ScrollReveal>
         

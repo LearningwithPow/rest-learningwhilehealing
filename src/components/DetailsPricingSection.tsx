@@ -53,6 +53,28 @@ const DetailsPricingSection = () => {
             />
           </div>
         </ScrollReveal>
+        <ScrollReveal delay={0.22}>
+          <div className="bg-background rounded-2xl p-8 md:p-10 shadow-soft max-w-md mx-auto mb-8 text-left">
+            <p className="font-serif text-xl md:text-2xl font-medium text-foreground mb-5 text-center">
+              Your <span className="text-primary">₱999</span> Includes:
+            </p>
+            <ul className="flex flex-col gap-3">
+              {[
+                "3 Live Coaching Sessions",
+                "Guided REST Framework",
+                "Reflection Workbook",
+                "Practical Reset Tools",
+                "Supportive Small Group Experience",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-3 text-base md:text-lg text-foreground">
+                  <span className="text-primary/80 flex-shrink-0 mt-0.5">✓</span>
+                  <span className="leading-relaxed">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </ScrollReveal>
+
         <ScrollReveal delay={0.25}>
           <div className="bg-background rounded-2xl p-8 md:p-10 shadow-soft max-w-md mx-auto mb-8">
             <div className="flex items-center justify-center gap-2 mb-6">
@@ -60,7 +82,7 @@ const DetailsPricingSection = () => {
               <span className="text-lg font-semibold text-foreground">Investment</span>
             </div>
 
-            <div className="space-y-2 mb-2">
+            <div className="space-y-2 mb-4">
               <p className="text-2xl md:text-3xl font-serif font-medium text-foreground">
                 Early Bird: <span className="text-primary">₱999</span>
               </p>
@@ -69,6 +91,12 @@ const DetailsPricingSection = () => {
               </p>
               <p className="text-sm text-muted-foreground mt-1">
                 Early bird until April 24
+              </p>
+            </div>
+
+            <div className="bg-[hsl(270,30%,95%)] rounded-xl px-4 py-3 mt-4">
+              <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                Small group only. Registration closes once slots are full.
               </p>
             </div>
           </div>
