@@ -28,6 +28,7 @@ const Index = () => {
       <ValueStackSection />
       <TestimonialsSection />
       <FromAwarenessSection />
+      <ValueStackPremiumSection />
       <DetailsPricingSection />
       <WalkAwaySection />
       <WhatItIsSection />
