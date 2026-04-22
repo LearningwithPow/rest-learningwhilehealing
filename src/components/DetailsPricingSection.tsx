@@ -1,4 +1,4 @@
-import { Video, Users, Clock, Calendar, Sparkles, ShieldCheck } from "lucide-react";
+import { Video, Users, Clock, Calendar, Sparkles, ShieldCheck, Flame } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ScrollReveal from "@/components/ScrollReveal";
 import zoomSessionImg from "@/assets/zoom-coaching-session.jpg";
@@ -53,28 +53,6 @@ const DetailsPricingSection = () => {
             />
           </div>
         </ScrollReveal>
-        <ScrollReveal delay={0.22}>
-          <div className="bg-background rounded-2xl p-8 md:p-10 shadow-soft max-w-md mx-auto mb-8 text-left">
-            <p className="font-serif text-xl md:text-2xl font-medium text-foreground mb-5 text-center">
-              Your <span className="text-primary">₱999</span> Includes:
-            </p>
-            <ul className="flex flex-col gap-3">
-              {[
-                "3 Live Coaching Sessions",
-                "Guided REST Framework",
-                "Reflection Workbook",
-                "Practical Reset Tools",
-                "Supportive Small Group Experience",
-              ].map((item) => (
-                <li key={item} className="flex items-start gap-3 text-base md:text-lg text-foreground">
-                  <span className="text-primary/80 flex-shrink-0 mt-0.5">✓</span>
-                  <span className="leading-relaxed">{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </ScrollReveal>
-
         <ScrollReveal delay={0.25}>
           <div className="bg-background rounded-2xl p-8 md:p-10 shadow-soft max-w-md mx-auto mb-8">
             <div className="flex items-center justify-center gap-2 mb-6">
@@ -82,16 +60,22 @@ const DetailsPricingSection = () => {
               <span className="text-lg font-semibold text-foreground">Investment</span>
             </div>
 
-            <div className="space-y-2 mb-4">
-              <p className="text-2xl md:text-3xl font-serif font-medium text-foreground">
+            <div className="space-y-3 mb-4">
+              <p className="text-3xl md:text-4xl font-serif font-medium text-foreground">
                 Early Bird: <span className="text-primary">₱999</span>
               </p>
-              <p className="text-lg text-muted-foreground">
-                Regular: ₱1,499
+              <p className="text-sm md:text-base text-muted-foreground">
+                That's less than ₱333 per guided evening.
               </p>
-              <p className="text-sm text-muted-foreground mt-1">
-                Early bird until April 24
+              <p className="text-lg text-muted-foreground pt-1">
+                Regular Rate: <span className="line-through">₱1,499</span>
               </p>
+              <div className="inline-flex items-center gap-2 mt-2 rounded-full bg-[hsl(270,30%,95%)] px-3 py-1.5">
+                <Flame className="w-3.5 h-3.5 text-primary" />
+                <span className="text-xs font-medium text-foreground/80 tracking-wide">
+                  Early bird ending soon
+                </span>
+              </div>
             </div>
 
             <div className="bg-[hsl(270,30%,95%)] rounded-xl px-4 py-3 mt-4">
@@ -106,11 +90,11 @@ const DetailsPricingSection = () => {
         <ScrollReveal delay={0.35}>
           <a href="https://checkout.xendit.co/od/Rest_Reset_EarlyBird" target="_blank" rel="noopener noreferrer">
             <Button variant="calm" size="calm">
-              Reserve Your Spot
+              Reserve My Spot
             </Button>
           </a>
           <p className="text-sm text-muted-foreground mt-4">
-            Secure your spot while early bird is available.
+            Starts next week • Limited seats available
           </p>
           <div className="flex items-center justify-center gap-2 mt-4 text-muted-foreground/70">
             <ShieldCheck className="w-4 h-4 flex-shrink-0" />

@@ -3,12 +3,12 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const WalkAwaySection = () => {
   const benefits = [
-    "A personal toolbox of mindfulness and nervous system regulation skills so you can calm yourself anytime and support the people you love",
-    "The ability to create inner safety on demand instead of being hijacked by stress, emotions, or overthinking",
-    "A repeatable inner process for sorting mental and emotional clutter so overwhelm no longer runs your decisions",
-    "The confidence to respond to yourself with clarity and compassion instead of self-criticism",
-    "Lived experience of practicing reflection inside a safe, guided container so you embody what you learn",
-    "Belonging to a grounded, faith-aligned community of like-minded women inside the Learning While Healing circle",
+    "A calmer nervous system",
+    "More clarity in decisions",
+    "Tools to stop spiraling faster",
+    "Emotional breathing room",
+    "Compassionate inner self-talk",
+    "Renewed peace you can return to",
   ];
 
   return (
@@ -16,7 +16,7 @@ const WalkAwaySection = () => {
       <div className="max-w-3xl mx-auto text-center">
         <ScrollReveal>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-4 leading-tight">
-            What You Walk Away With After REST Reset
+            What You Walk Away With
           </h2>
         </ScrollReveal>
 
@@ -44,8 +44,10 @@ const WalkAwaySection = () => {
         </div>
 
         <ScrollReveal delay={0.6}>
-          <p className="text-base md:text-lg font-semibold text-foreground mt-8">
-            You don't just learn tools. You become someone who knows how to create inner order.
+          <p className="text-base md:text-lg text-foreground mt-8 leading-relaxed">
+            You don't just learn tools.
+            <br />
+            <span className="font-semibold">You become someone who knows how to create inner order.</span>
           </p>
         </ScrollReveal>
       </div>

@@ -37,7 +37,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4, ease: [0.25, 0.4, 0.25, 1] }}
         >
-          Feel Mentally Tired, Emotionally Heavy, and Stuck in Overthinking?
+          Stop Overthinking and Feel Like Yourself Again in 3 Guided Evenings
         </motion.h1>
         
         <motion.p
@@ -46,21 +46,21 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6, ease: [0.25, 0.4, 0.25, 1] }}
         >
-          REST Reset helps you calm your nervous system, clear your mind, and feel 
-          like yourself again in 3 guided evenings.
+          A live small-group reset for mentally tired women who need clarity,
+          emotional breathing room, and peace again.
         </motion.p>
 
         <motion.ul
-          className="flex flex-col gap-2 max-w-xl mx-auto md:mx-0 text-left"
+          className="flex flex-col gap-2 max-w-xl mx-auto md:mx-0 text-left mb-8"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8, ease: [0.25, 0.4, 0.25, 1] }}
         >
           {[
-            "Live guided by Coach Pow",
-            "Faith + CBT + Mindfulness tools",
-            "Safe small group environment",
-            "Beginner friendly",
+            "April 28–30, 2026",
+            "7:30 PM – 9:30 PM via Zoom",
+            "Small group only",
+            "For Declutter attendees / qualified participants",
           ].map((item) => (
             <li
               key={item}
@@ -71,6 +71,26 @@ const HeroSection = () => {
             </li>
           ))}
         </motion.ul>
+
+        <motion.div
+          className="flex flex-col items-center md:items-start gap-3"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1.0, ease: [0.25, 0.4, 0.25, 1] }}
+        >
+          <a
+            href="https://checkout.xendit.co/od/Rest_Reset_EarlyBird"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button variant="calm" size="calm">
+              Yes, I Need This Reset
+            </Button>
+          </a>
+          <p className="text-sm text-foreground/70">
+            Starts next week • Limited seats available
+          </p>
+        </motion.div>
       </div>
 
       {/* Scroll indicator */}

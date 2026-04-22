@@ -8,7 +8,7 @@ const FinalCtaSection = () => {
       <div className="max-w-3xl mx-auto text-center">
         <ScrollReveal>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-6 leading-tight">
-            You do not need to carry stress alone anymore.
+            You Do Not Need to Carry Stress Alone Anymore
           </h2>
         </ScrollReveal>
         
@@ -16,13 +16,6 @@ const FinalCtaSection = () => {
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-6">
             Join REST Reset and give your mind, body, and soul room to 
             breathe again.
-          </p>
-        </ScrollReveal>
-        
-        <ScrollReveal delay={0.15}>
-          <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-6">
-            If you feel ready to create a little more space within, 
-            you are welcome here.
           </p>
         </ScrollReveal>
         
@@ -37,9 +30,12 @@ const FinalCtaSection = () => {
         <ScrollReveal delay={0.3}>
           <a href="https://checkout.xendit.co/od/Rest_Reset_EarlyBird" target="_blank" rel="noopener noreferrer">
             <Button variant="calm" size="calm">
-              Reserve Your Spot
+              Yes, I'm Ready
             </Button>
           </a>
+          <p className="text-sm text-muted-foreground mt-4">
+            Starts April 28 • Small group only
+          </p>
           <div className="flex items-center justify-center gap-2 mt-4 text-muted-foreground/70">
             <ShieldCheck className="w-4 h-4 flex-shrink-0" />
             <p className="text-xs">
