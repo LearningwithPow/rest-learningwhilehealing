@@ -5,7 +5,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 const ValueStackPremiumSection = () => {
   const inclusions = [
     { item: "3 Coaching Nights (2 hrs each)", value: "₱15,000" },
-    { item: "Reflection Workbook", value: "₱1,000" },
+    { item: "Reflection Workbook", value: "₱500" },
     { item: "Emotional Regulation Tools", value: "₱1,000" },
     { item: "Guided Support", value: "₱2,500" },
     { item: "Safe Community", value: "Priceless" },
@@ -66,7 +66,7 @@ const ValueStackPremiumSection = () => {
                   Total Value
                 </p>
                 <p className="font-serif text-4xl md:text-5xl font-semibold text-muted-foreground line-through">
-                  ₱19,500+
+                  ₱19,000+
                 </p>
               </div>
 
@@ -79,7 +79,7 @@ const ValueStackPremiumSection = () => {
                 </p>
                 <div className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1">
                   <Flame className="w-3.5 h-3.5 text-primary" />
-                  <span className="text-xs font-medium text-foreground/80">You Save ₱18,500+</span>
+                  <span className="text-xs font-medium text-foreground/80">You Save ₱18,000+</span>
                 </div>
               </div>
 
