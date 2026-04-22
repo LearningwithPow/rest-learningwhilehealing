@@ -94,7 +94,7 @@ const DetailsPricingSection = () => {
               </span>
             </div>
 
-            <div className="bg-[hsl(270,30%,95%)] rounded-xl px-4 py-4">
+            <div className="bg-[hsl(270,30%,97%)] rounded-xl px-4 py-4">
               <div className="flex items-center justify-center gap-2 mb-2">
                 <Timer className="w-4 h-4 text-primary" />
                 <span className="text-sm font-medium text-foreground">Limited Availability</span>
