@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { X } from "lucide-react";
+import { X, Timer, Gift } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const STORAGE_KEY = "rest_reset_popup_shown";
+const STORAGE_KEY = "rest_reset_popup_shown_v2";
 
 const ExitIntentPopup = () => {
   const [open, setOpen] = useState(false);
@@ -23,7 +23,7 @@ const ExitIntentPopup = () => {
       if (e.clientY <= 0) trigger();
     };
 
-    const timer = window.setTimeout(trigger, 18000);
+    const timer = window.setTimeout(trigger, 15000);
     document.addEventListener("mouseleave", onMouseLeave);
 
     return () => {
@@ -47,7 +47,7 @@ const ExitIntentPopup = () => {
         onClick={() => setOpen(false)}
         className="absolute inset-0 bg-foreground/30 backdrop-blur-sm"
       />
-      <div className="relative w-full max-w-md bg-card rounded-2xl shadow-glow p-8 md:p-10 text-center">
+      <div className="relative w-full max-w-md bg-card rounded-2xl shadow-glow p-8 md:p-10 text-center border border-primary/10">
         <button
           type="button"
           onClick={() => setOpen(false)}
@@ -57,19 +57,32 @@ const ExitIntentPopup = () => {
           <X className="w-5 h-5" />
         </button>
 
-        <p className="text-xs font-medium tracking-widest uppercase text-primary/80 mb-3">
-          A gentle nudge
-        </p>
+        <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1.5 mb-4">
+          <Gift className="w-4 h-4 text-primary" />
+          <span className="text-xs font-medium text-foreground/80 tracking-wide">Special Offer</span>
+        </div>
+
         <h3
           id="exit-popup-title"
-          className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-4 leading-tight"
+          className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-3 leading-tight"
         >
-          Still thinking about it?
+          Wait — Don't Miss Your Reset
         </h3>
-        <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-6">
-          REST Reset starts next week. Small group only. If your mind has been
-          carrying too much, this may be your sign to begin.
+        
+        <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-6"
+        >
+          REST Reset starts April 28. Small group only. If your mind has been carrying too much, this is your invitation to begin.
         </p>
+
+        <div className="bg-primary/5 rounded-xl px-4 py-3 mb-6">
+          <div className="flex items-center justify-center gap-2 mb-1">
+            <Timer className="w-4 h-4 text-primary" />
+            <span className="text-sm font-medium text-foreground">Early Bird Ends Soon</span>
+          </div>
+          <p className="text-2xl font-serif font-semibold text-primary">
+            ₱999 <span className="text-base text-muted-foreground line-through font-normal">₱1,499</span>
+          </p>
+        </div>
 
         <a
           href="https://checkout.xendit.co/od/Rest_Reset_EarlyBird"
@@ -77,12 +90,13 @@ const ExitIntentPopup = () => {
           rel="noopener noreferrer"
           onClick={() => setOpen(false)}
         >
-          <Button variant="calm" size="calm">
-            Yes, Save My Spot
+          <Button variant="calm" size="calm" className="w-full">
+            Yes, Save My Spot Now
           </Button>
         </a>
+        
         <p className="text-xs text-muted-foreground/80 mt-4">
-          Only limited seats available
+          Secure checkout • Limited seats remaining
         </p>
       </div>
     </div>
