@@ -1,50 +1,37 @@
+import { Check } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
+
+const qualities = ["Gentle", "Practical", "Safe", "Supportive"];
 
 const WhatItIsSection = () => {
   return (
     <section className="section-calm">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-3xl mx-auto text-center">
         <ScrollReveal>
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-12 leading-tight text-center">
-            What REST Reset Is and Is Not
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-10 leading-tight">
+            What REST Reset Is
           </h2>
         </ScrollReveal>
-        
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
-          {/* What It Is */}
-          <ScrollReveal delay={0.1}>
-            <div className="bg-card rounded-2xl p-8 shadow-soft h-full">
-              <h3 className="font-serif text-2xl font-semibold text-foreground mb-6">
-                What It Is
-              </h3>
-              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                REST Reset is a live, guided group coaching experience held online. 
-                You will be gently guided to notice, name, and sort emotional and mental 
-                clutter using the REST framework with reflection, structure, and 
-                compassionate facilitation.
-              </p>
-            </div>
-          </ScrollReveal>
-          
-          {/* What It Is Not */}
-          <ScrollReveal delay={0.2}>
-            <div className="bg-card rounded-2xl p-8 shadow-soft h-full">
-              <h3 className="font-serif text-2xl font-semibold text-foreground mb-6">
-                What It Is Not
-              </h3>
-              <div className="text-lg md:text-xl text-muted-foreground leading-relaxed space-y-4">
-                <p>
-                  This is not therapy.<br />
-                  Not a lecture.<br />
-                  Not a space where you are told what to feel or how to heal.
-                </p>
-                <p>
-                  It is an experience designed to help you create space, not force change.
-                </p>
-              </div>
-            </div>
-          </ScrollReveal>
-        </div>
+
+        <ScrollReveal delay={0.15}>
+          <div className="bg-card rounded-2xl p-8 md:p-10 shadow-soft text-left">
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8 text-center">
+              A guided small-group coaching experience designed to help you calm
+              stress, organize emotional clutter, and feel like yourself again.
+            </p>
+
+            <ul className="grid grid-cols-2 gap-4 max-w-md mx-auto">
+              {qualities.map((q) => (
+                <li key={q} className="flex items-center gap-3">
+                  <div className="w-9 h-9 min-w-[2.25rem] rounded-full bg-accent flex items-center justify-center flex-shrink-0">
+                    <Check className="w-4 h-4 text-accent-foreground" />
+                  </div>
+                  <span className="text-lg md:text-xl text-foreground">{q}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </ScrollReveal>
       </div>
     </section>
   );
