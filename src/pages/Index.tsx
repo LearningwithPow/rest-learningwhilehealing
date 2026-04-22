@@ -1,6 +1,9 @@
 import HeroSection from "@/components/HeroSection";
 import IntroSection from "@/components/IntroSection";
-import ForYouIfSection from "@/components/ForYouIfSection";
+import ValueStackSection from "@/components/ValueStackSection";
+import TrustStripSection from "@/components/TrustStripSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import PainResonanceSection from "@/components/PainResonanceSection";
 import FromAwarenessSection from "@/components/FromAwarenessSection";
 import DetailsPricingSection from "@/components/DetailsPricingSection";
 import WalkAwaySection from "@/components/WalkAwaySection";
@@ -9,13 +12,18 @@ import RestFrameworkSection from "@/components/RestFrameworkSection";
 
 import BeforeYouJoinSection from "@/components/BeforeYouJoinSection";
 import FinalCtaSection from "@/components/FinalCtaSection";
+import FloatingCta from "@/components/FloatingCta";
+import ExitIntentPopup from "@/components/ExitIntentPopup";
 
 const Index = () => {
   return (
     <main className="min-h-screen">
       <HeroSection />
+      <TrustStripSection />
       <IntroSection />
-      <ForYouIfSection />
+      <PainResonanceSection />
+      <ValueStackSection />
+      <TestimonialsSection />
       <FromAwarenessSection />
       <DetailsPricingSection />
       <WalkAwaySection />
@@ -24,6 +32,9 @@ const Index = () => {
       
       <BeforeYouJoinSection />
       <FinalCtaSection />
+
+      <FloatingCta />
+      <ExitIntentPopup />
     </main>
   );
 };
