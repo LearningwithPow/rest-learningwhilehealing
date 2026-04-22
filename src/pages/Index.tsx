@@ -1,6 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import SalesBridgeSection from "@/components/SalesBridgeSection";
-import ValueStackSection from "@/components/ValueStackSection";
+import ValueStackPremiumSection from "@/components/ValueStackPremiumSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import PainResonanceSection from "@/components/PainResonanceSection";
 import FromAwarenessSection from "@/components/FromAwarenessSection";
@@ -14,7 +14,7 @@ const Index = () => {
     <main className="min-h-screen">
       <HeroSection />
       <SalesBridgeSection />
-      <ValueStackSection />
+      <ValueStackPremiumSection />
       <PainResonanceSection />
       <FromAwarenessSection />
       <TestimonialsSection />
