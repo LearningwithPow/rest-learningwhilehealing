@@ -1,6 +1,8 @@
-import { ShieldCheck, Sparkles } from "lucide-react";
+import { Facebook, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ScrollReveal from "@/components/ScrollReveal";
+
+const FACEBOOK_URL = "https://www.facebook.com/LearningWhileHealing/";
 
 const FinalCtaSection = () => {
   return (
@@ -15,44 +17,31 @@ const FinalCtaSection = () => {
         
         <ScrollReveal delay={0.05}>
           <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-4 sm:mb-6 leading-tight">
-            You Do Not Need To Carry This Alone Anymore
+            Didn't make this round? You're still welcome here.
           </h2>
         </ScrollReveal>
         
         <ScrollReveal delay={0.1}>
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed mb-6 max-w-xl mx-auto">
-            Join REST Reset and give your mind, body, and soul space to breathe again.
+            Follow Learning While Healing on Facebook for future openings, free encouragement, wellness tools, and first access to the next REST Reset batch.
           </p>
         </ScrollReveal>
-        
-        <ScrollReveal delay={0.15}>
-          <div className="bg-primary/10 rounded-2xl px-4 sm:px-6 py-3 sm:py-4 mb-6 sm:mb-8 inline-block">
-            <p className="text-sm sm:text-base text-muted-foreground">
-              Limited slots only • Starts April 28
-            </p>
-          </div>
-        </ScrollReveal>
-        
+
         <ScrollReveal delay={0.2}>
-          <a href="https://checkout.xendit.co/od/Rest_Reset_EarlyBird" target="_blank" rel="noopener noreferrer">
-            <Button variant="calm" size="calm" className="text-base">
-              Yes, I'm Ready for Renewal
+          <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer">
+            <Button variant="calm" size="calm" className="text-base inline-flex items-center gap-2">
+              <Facebook className="w-4 h-4 sm:w-5 sm:h-5" />
+              Follow Learning While Healing
             </Button>
           </a>
           <p className="text-xs sm:text-sm text-muted-foreground mt-3 sm:mt-4">
-            Secure checkout via Xendit • GCash • Maya • Cards accepted
+            Be the first to know when the next batch opens.
           </p>
-          <div className="flex items-center justify-center gap-2 mt-3 sm:mt-4 text-muted-foreground/70">
-            <ShieldCheck className="w-3.5 h-3.5 sm:w-4 sm:h-4 flex-shrink-0" />
-            <p className="text-[10px] sm:text-xs">
-              Your information is protected and secure
-            </p>
-          </div>
         </ScrollReveal>
         
         <ScrollReveal delay={0.25}>
           <p className="text-xs sm:text-sm text-muted-foreground/60 italic mt-6 sm:mt-8 max-w-lg mx-auto">
-            Sometimes healing begins when we say yes and let God lead the next step.
+            Sometimes closed doors simply mean a new opening is being prepared.
           </p>
         </ScrollReveal>
         
