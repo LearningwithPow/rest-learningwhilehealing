@@ -71,7 +71,7 @@ const ExitIntentPopup = () => {
         
         <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-6"
         >
-          REST Reset starts April 28. Small group only. If your mind has been carrying too much, this is your invitation to begin.
+          REST Reset starts June 9. Small group only. If your mind has been carrying too much, this is your invitation to begin.
         </p>
 
         <div className="bg-primary/5 rounded-xl px-4 py-3 mb-6">

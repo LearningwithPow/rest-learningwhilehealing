@@ -30,7 +30,7 @@ const FloatingCta = () => {
               <span className="text-xs font-semibold text-primary tracking-wide uppercase">Early Bird Ends Soon</span>
             </div>
             <p className="text-sm text-muted-foreground">
-              Join for ₱999 (Save ₱500) • Starts April 28
+              Join for ₱999 (Save ₱500) • Starts June 9
             </p>
           </div>
           
