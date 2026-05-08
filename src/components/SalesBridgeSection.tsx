@@ -63,7 +63,7 @@ const SalesBridgeSection = () => {
               </p>
               <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5">
                 <span className="text-xs font-medium text-foreground/80 tracking-wide">
-                  Starts next week • Limited slots
+                  Starts June 9 • Limited slots
                 </span>
               </div>
             </div>

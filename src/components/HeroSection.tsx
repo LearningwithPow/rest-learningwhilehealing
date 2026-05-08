@@ -57,7 +57,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.8, ease: [0.25, 0.4, 0.25, 1] }}
         >
           {[
-            "April 28–30, 2026",
+            "June 9–11, 2026",
             "7:30 PM – 9:30 PM via Zoom",
             "Small group only",
             "For Declutter attendees / qualified participants",
@@ -88,7 +88,7 @@ const HeroSection = () => {
             </Button>
           </a>
           <p className="text-sm text-foreground/70">
-            Starts next week • Limited seats available
+            Starts June 9 • Limited seats available
           </p>
         </motion.div>
       </div>
