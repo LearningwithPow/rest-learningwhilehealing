@@ -68,7 +68,7 @@ const PainResonanceSection = () => {
 
         <ScrollReveal delay={0.55}>
           <a
-            href="https://checkout.xendit.co/od/Rest_Reset_EarlyBird"
+            href="https://checkout.xendit.co/od/RESTJune2026"
             target="_blank"
             rel="noopener noreferrer"
           >

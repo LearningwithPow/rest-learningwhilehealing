@@ -70,7 +70,7 @@ const SalesBridgeSection = () => {
 
             {/* CTA */}
             <a
-              href="https://checkout.xendit.co/od/Rest_Reset_EarlyBird"
+              href="https://checkout.xendit.co/od/RESTJune2026"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full"
