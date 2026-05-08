@@ -1,4 +1,5 @@
 import ScrollReveal from "@/components/ScrollReveal";
+import { Button } from "@/components/ui/button";
 
 const PainResonanceSection = () => {
   const points = [
@@ -60,9 +61,24 @@ const PainResonanceSection = () => {
         <ScrollReveal delay={0.5}>
           <div className="bg-primary/5 rounded-2xl p-6 md:p-8 max-w-xl mx-auto mb-8">
             <p className="font-serif text-xl md:text-2xl font-medium text-foreground leading-relaxed">
-              You do not have to figure this out alone. The next REST Reset batch will open soon.
+              You do not have to figure this out alone. REST Reset is your guided path back to peace.
             </p>
           </div>
+        </ScrollReveal>
+
+        <ScrollReveal delay={0.55}>
+          <a
+            href="https://checkout.xendit.co/od/Rest_Reset_EarlyBird"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button variant="calm" size="calm">
+              Yes, I Need This Reset
+            </Button>
+          </a>
+          <p className="text-sm text-muted-foreground mt-4">
+            Starts April 28 • Small group only
+          </p>
         </ScrollReveal>
       </div>
     </section>

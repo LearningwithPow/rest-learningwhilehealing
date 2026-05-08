@@ -8,7 +8,7 @@ const DetailsPricingSection = () => {
     { icon: Video, text: "Live via Zoom", subtext: "Private, intimate sessions" },
     { icon: Users, text: "Small group only", subtext: "Limited to ensure safety" },
     { icon: Clock, text: "2 hours per session", subtext: "Deep, unhurried work" },
-    { icon: Calendar, text: "June 9–11, 2026", subtext: "Tue–Thu, 7:30–9:30 PM" },
+    { icon: Calendar, text: "April 28–30, 2026", subtext: "Tue–Thu, 7:30–9:30 PM" },
   ];
 
   return (
@@ -90,7 +90,7 @@ const DetailsPricingSection = () => {
             <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2 mb-6">
               <Flame className="w-4 h-4 text-primary" />
               <span className="text-sm font-medium text-foreground/80 tracking-wide">
-                Early bird until June 5
+                Early bird ending soon
               </span>
             </div>
 

@@ -2,8 +2,6 @@ import heroImage from "@/assets/hero-calm-woman.jpg";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
-const FACEBOOK_URL = "https://www.facebook.com/LearningWhileHealing/";
-
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -28,12 +26,9 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: [0.25, 0.4, 0.25, 1] }}
         >
-          <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 backdrop-blur-sm px-4 py-1.5 mb-5 border border-primary/20">
-            <span className="w-2 h-2 rounded-full bg-primary/70" />
-            <p className="text-xs sm:text-sm font-medium tracking-[0.18em] uppercase text-primary">
-              Registration Closed
-            </p>
-          </div>
+          <p className="text-sm font-medium tracking-widest uppercase text-muted-foreground mb-4">
+            Learning While Healing
+          </p>
         </motion.div>
         
         <motion.h1
@@ -42,7 +37,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4, ease: [0.25, 0.4, 0.25, 1] }}
         >
-          This Batch Is Officially Full
+          Stop Overthinking and Feel Like Yourself Again in 3 Guided Evenings
         </motion.h1>
         
         <motion.p
@@ -51,17 +46,31 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6, ease: [0.25, 0.4, 0.25, 1] }}
         >
-          Thank you for the beautiful response. All available slots for this round have been filled.
+          A live small-group reset for mentally tired women who need clarity,
+          emotional breathing room, and peace again.
         </motion.p>
 
-        <motion.p
-          className="text-base md:text-lg text-foreground/85 mb-8 max-w-xl leading-relaxed"
+        <motion.ul
+          className="flex flex-col gap-2 max-w-xl mx-auto md:mx-0 text-left mb-8"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8, ease: [0.25, 0.4, 0.25, 1] }}
         >
-          We will see this group very soon. And we would love to welcome you in the next batch.
-        </motion.p>
+          {[
+            "April 28–30, 2026",
+            "7:30 PM – 9:30 PM via Zoom",
+            "Small group only",
+            "For Declutter attendees / qualified participants",
+          ].map((item) => (
+            <li
+              key={item}
+              className="flex items-start gap-2 text-base md:text-lg text-foreground/90"
+            >
+              <span className="text-primary/80 flex-shrink-0 mt-0.5">✓</span>
+              <span>{item}</span>
+            </li>
+          ))}
+        </motion.ul>
 
         <motion.div
           className="flex flex-col items-center md:items-start gap-3"
@@ -70,22 +79,17 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 1.0, ease: [0.25, 0.4, 0.25, 1] }}
         >
           <a
-            href={FACEBOOK_URL}
+            href="https://checkout.xendit.co/od/Rest_Reset_EarlyBird"
             target="_blank"
             rel="noopener noreferrer"
           >
             <Button variant="calm" size="calm">
-              Follow Our Facebook Page
+              Yes, I Need This Reset
             </Button>
           </a>
-          <a
-            href={FACEBOOK_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm text-foreground/75 underline-offset-4 hover:underline transition-colors"
-          >
-            Next batch announcements will be posted there first.
-          </a>
+          <p className="text-sm text-foreground/70">
+            Starts next week • Limited seats available
+          </p>
         </motion.div>
       </div>
 
