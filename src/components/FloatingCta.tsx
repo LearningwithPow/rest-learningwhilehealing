@@ -35,7 +35,7 @@ const FloatingCta = () => {
           </div>
           
           <a
-            href="https://checkout.xendit.co/od/Rest_Reset_EarlyBird"
+            href="https://checkout.xendit.co/od/RESTJune2026"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-full bg-primary text-primary-foreground shadow-glow hover:scale-[1.02] transition-all duration-500 ease-out px-8 py-4 text-base font-medium whitespace-nowrap"
