@@ -97,7 +97,7 @@ const ValueStackPremiumSection = () => {
               <div className="flex items-center justify-center gap-2 mt-4 text-muted-foreground/80">
                 <Timer className="w-4 h-4 flex-shrink-0" />
                 <p className="text-[11px] sm:text-xs">
-                  Starts next week • Small group only
+                  Starts June 9 • Small group only
                 </p>
               </div>
             </div>
