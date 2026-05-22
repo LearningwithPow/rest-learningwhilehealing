@@ -11,6 +11,10 @@ const HeroSection = () => {
         <img
           src={heroImage}
           alt="A woman sitting peacefully by a window, looking calm and reflective"
+          width={1920}
+          height={1280}
+          fetchPriority="high"
+          decoding="async"
           className="w-full h-full object-cover object-center"
         />
         {/* Enhanced overlays for better text readability */}

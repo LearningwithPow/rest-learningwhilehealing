@@ -1,0 +1,13 @@
+# REST Reset
+
+> REST Reset is a gentle, guided small-group coaching experience by Learning While Healing — three Zoom evenings to help mentally tired women find clarity, emotional breathing room, and peace again.
+
+REST Reset is held June 9–11, 2026, 7:30 PM – 9:30 PM Philippine time. Early bird pricing of ₱999 is available until June 5, 2026; regular price is ₱1,499. Designed for prior Declutter attendees and qualified participants.
+
+## Pages
+
+- [Home](/): Overview of REST Reset, the REST framework, testimonials, pricing, and registration.
+
+## Optional
+
+- [Checkout](https://checkout.xendit.co/od/RESTJune2026): Secure checkout for REST Reset (Xendit, GCash, Maya, cards).
