@@ -1,6 +1,7 @@
 import { Check, Flame, Timer } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ScrollReveal from "@/components/ScrollReveal";
+import CountdownTimer from "@/components/CountdownTimer";
 
 const ValueStackPremiumSection = () => {
   const inclusions = [
@@ -71,6 +72,15 @@ const ValueStackPremiumSection = () => {
               </div>
 
               <div className="bg-card rounded-xl p-5 sm:p-6 text-center mb-5 sm:mb-6 shadow-soft">
+                <div className="mb-5">
+                  <CountdownTimer
+                    targetDate="2026-06-05T23:59:00+08:00"
+                    label="Early Bird Price Ends In"
+                    endedMessage="Early Bird has ended. Regular price ₱1,499 now applies."
+                    belowText="After June 5, price increases to ₱1,499"
+                    variant="prominent"
+                  />
+                </div>
                 <p className="text-xs sm:text-sm font-medium text-muted-foreground mb-1 uppercase tracking-wide">
                   Today Only
                 </p>

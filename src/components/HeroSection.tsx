@@ -1,6 +1,7 @@
 import heroImage from "@/assets/hero-calm-woman.jpg";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import CountdownTimer from "@/components/CountdownTimer";
 
 const HeroSection = () => {
   return (
@@ -39,7 +40,21 @@ const HeroSection = () => {
         >
           Stop Overthinking and Feel Like Yourself Again in 3 Guided Evenings
         </motion.h1>
-        
+
+        <motion.div
+          className="mb-6 flex md:justify-start justify-center"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.5, ease: [0.25, 0.4, 0.25, 1] }}
+        >
+          <CountdownTimer
+            targetDate="2026-06-09T19:30:00+08:00"
+            label="REST Reset Begins In"
+            endedMessage="REST Reset is now live! 🙏"
+            variant="minimal"
+          />
+        </motion.div>
+
         <motion.p
           className="font-serif text-lg md:text-xl lg:text-2xl text-foreground/90 italic mb-8 max-w-xl leading-relaxed drop-shadow-sm"
           initial={{ opacity: 0, y: 20 }}
