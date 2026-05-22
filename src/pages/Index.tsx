@@ -2,6 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import SalesBridgeSection from "@/components/SalesBridgeSection";
 import ValueStackPremiumSection from "@/components/ValueStackPremiumSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
+import JourneySection from "@/components/JourneySection";
 import PainResonanceSection from "@/components/PainResonanceSection";
 import FromAwarenessSection from "@/components/FromAwarenessSection";
 import WalkAwaySection from "@/components/WalkAwaySection";
@@ -18,7 +19,10 @@ const Index = () => {
       <FromAwarenessSection />
       <TestimonialsSection />
       <WalkAwaySection />
-      <ValueStackPremiumSection />
+      <JourneySection />
+      <div id="pricing">
+        <ValueStackPremiumSection />
+      </div>
       <FinalCtaSection />
 
       <FloatingCta />
