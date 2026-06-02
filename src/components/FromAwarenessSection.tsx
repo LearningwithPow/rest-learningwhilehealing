@@ -53,7 +53,7 @@ const FromAwarenessSection = () => {
 
         <ScrollReveal delay={0.55}>
           <p className="text-sm text-muted-foreground">
-            Prerequisite: Completion of Declutter to Clarity (live session) or at least one 1:1 CBT Coaching Session is required before joining REST Reset.
+            REST Reset is designed to meet you wherever you are in your journey. Whether you are new to Learning While Healing or have attended previous programs, you are welcome here.
           </p>
         </ScrollReveal>
       </div>
