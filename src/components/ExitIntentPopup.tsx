@@ -77,7 +77,7 @@ const ExitIntentPopup = () => {
         <div className="bg-primary/5 rounded-xl px-4 py-3 mb-6">
           <div className="flex items-center justify-center gap-2 mb-1">
             <Timer className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium text-foreground">Early Bird Until June 5</span>
+            <span className="text-sm font-medium text-foreground">Early Bird Until June 7</span>
           </div>
           <p className="text-2xl font-serif font-semibold text-primary">
             ₱999 <span className="text-base text-muted-foreground line-through font-normal">₱1,499</span>
