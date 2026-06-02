@@ -79,7 +79,7 @@ const HeroSection = () => {
             "June 9–11, 2026",
             "7:30 PM – 9:30 PM via Zoom",
             "Small group only",
-            "For Declutter attendees / qualified participants",
+            "Open to all women seeking clarity, healing, and emotional renewal",
           ].map((item) => (
             <li
               key={item}

@@ -24,14 +24,14 @@ const SalesBridgeSection = () => {
         {/* Main headline */}
         <ScrollReveal delay={0.05}>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-4 leading-tight">
-            If Declutter gave you clarity…
+            A gentle reset, open to every woman.
           </h2>
         </ScrollReveal>
 
         {/* Subheadline */}
         <ScrollReveal delay={0.1}>
           <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-xl mx-auto">
-            Imagine what 3 guided evenings of deeper support can do.
+            Imagine what 3 guided evenings of gentle support can do.
           </p>
         </ScrollReveal>
 
