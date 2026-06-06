@@ -5,6 +5,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 const SalesBridgeSection = () => {
   const inclusions = [
     "3 Live Guided Coaching Nights",
+    "Pre-Reset Self-Discovery Assessment",
     "Reflection Workbook",
     "Emotional Regulation Tools",
     "Guided Reflection Exercises",
