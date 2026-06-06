@@ -6,6 +6,11 @@ import CountdownTimer from "@/components/CountdownTimer";
 const ValueStackPremiumSection = () => {
   const inclusions = [
     { item: "3 Coaching Nights (2 hrs each)", value: "₱15,000" },
+    {
+      item: "Pre-Reset Self-Discovery Assessment",
+      subline: "A guided self-discovery to personalize your Day 1 experience.",
+      value: "₱750",
+    },
     { item: "Reflection Workbook", value: "₱500" },
     { item: "Emotional Regulation Tools", value: "₱1,000" },
     { item: "Guided Support", value: "₱2,500" },
@@ -52,7 +57,14 @@ const ValueStackPremiumSection = () => {
                       <Check className="w-3 h-3 text-accent-foreground" />
                     </div>
                     <div className="flex-1 flex flex-wrap items-baseline justify-between gap-x-3 gap-y-0.5">
-                      <span className="text-[15px] sm:text-base text-foreground leading-snug">{item.item}</span>
+                      <div className="flex-1 min-w-0">
+                        <span className="text-[15px] sm:text-base text-foreground leading-snug block">{item.item}</span>
+                        {"subline" in item && item.subline && (
+                          <span className="text-xs sm:text-sm text-muted-foreground/80 leading-snug block mt-0.5">
+                            {item.subline}
+                          </span>
+                        )}
+                      </div>
                       <span className="text-muted-foreground text-sm tabular-nums">{item.value}</span>
                     </div>
                   </li>
@@ -67,7 +79,7 @@ const ValueStackPremiumSection = () => {
                   Total Value
                 </p>
                 <p className="font-serif text-3xl sm:text-4xl md:text-5xl font-semibold text-muted-foreground/80 line-through">
-                  ₱19,000+
+                  ₱19,750+
                 </p>
               </div>
 
