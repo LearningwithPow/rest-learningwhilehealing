@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { X, Timer, Gift } from "lucide-react";
+import { X, Leaf, Facebook } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const STORAGE_KEY = "rest_reset_popup_shown_v2";
@@ -58,45 +58,36 @@ const ExitIntentPopup = () => {
         </button>
 
         <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1.5 mb-4">
-          <Gift className="w-4 h-4 text-primary" />
-          <span className="text-xs font-medium text-foreground/80 tracking-wide">Special Offer</span>
+          <Leaf className="w-4 h-4 text-primary" />
+          <span className="text-xs font-medium text-foreground/80 tracking-wide">A Gentle Update</span>
         </div>
 
         <h3
           id="exit-popup-title"
           className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-3 leading-tight"
         >
-          Wait — Don't Miss Your Reset
+          REST Reset Registration Is Now Closed
         </h3>
         
         <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-6"
         >
-          REST Reset starts June 9. Small group only. If your mind has been carrying too much, this is your invitation to begin.
+          Our June 2026 group has already begun. Follow Learning While Healing on Facebook to be the first to know when the next REST Reset group opens.
         </p>
 
-        <div className="bg-primary/5 rounded-xl px-4 py-3 mb-6">
-          <div className="flex items-center justify-center gap-2 mb-1">
-            <Timer className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium text-foreground">Early Bird Until June 7</span>
-          </div>
-          <p className="text-2xl font-serif font-semibold text-primary">
-            ₱999 <span className="text-base text-muted-foreground line-through font-normal">₱1,499</span>
-          </p>
-        </div>
-
         <a
-          href="https://checkout.xendit.co/od/RESTJune2026"
+          href="https://www.facebook.com/LearningWhileHealing/"
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => setOpen(false)}
         >
           <Button variant="calm" size="calm" className="w-full">
-            Yes, Save My Spot Now
+            <Facebook className="w-5 h-5" />
+            Follow Us on Facebook
           </Button>
         </a>
-        
+
         <p className="text-xs text-muted-foreground/80 mt-4">
-          Secure checkout • Limited seats remaining
+          Stay connected for future groups, workshops, and resources.
         </p>
       </div>
     </div>
