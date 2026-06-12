@@ -20,7 +20,7 @@ const FromAwarenessSection = () => {
 
         <ScrollReveal delay={0.1}>
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-10">
-            A structured 3-evening group coaching experience to help you move beyond understanding yourself — into real inner order.
+            A structured 3-evening group coaching experience to help you move beyond understanding yourself, into real inner order.
           </p>
         </ScrollReveal>
 

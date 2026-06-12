@@ -3,6 +3,18 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const testimonials = [
   {
+    label: "Faith + Science Healing",
+    quote:
+      "Combining science and faith brought a different kind of healing. This experience was truly a blessing.",
+    name: "Alfreash",
+  },
+  {
+    label: "Science and Faith",
+    quote:
+      "A science AND faith based journey. I came in facing each day on autopilot. I left knowing our days are numbered, so I have to be intentional in my walk with God.",
+    name: "REST Reset participant, June 2026",
+  },
+  {
     label: "Reduced Anxiety + Peace",
     quote:
       "My anxiety lessened. I gained healthier habits, more peace of mind, and experienced real life change.",
@@ -31,12 +43,6 @@ const testimonials = [
     quote:
       "Very knowledgeable, clear, and practical. The worksheets truly helped me apply what I learned.",
     name: "Tiffany",
-  },
-  {
-    label: "Faith + Science Healing",
-    quote:
-      "Combining science and faith brought a different kind of healing. This experience was truly a blessing.",
-    name: "Alfreash",
   },
 ];
 

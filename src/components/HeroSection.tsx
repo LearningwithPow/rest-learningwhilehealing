@@ -31,8 +31,8 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: [0.25, 0.4, 0.25, 1] }}
         >
-          <p className="text-sm font-medium tracking-widest uppercase text-muted-foreground mb-4">
-            Learning While Healing
+          <p className="text-sm font-medium tracking-widest text-muted-foreground mb-4">
+            REST Reset July 2026 enrollment is now open 🙏
           </p>
         </motion.div>
         
@@ -52,7 +52,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.5, ease: [0.25, 0.4, 0.25, 1] }}
         >
           <CountdownTimer
-            targetDate="2026-06-09T19:30:00+08:00"
+            targetDate="2026-07-07T19:00:00+08:00"
             label="REST Reset Begins In"
             endedMessage="REST Reset is now live! 🙏"
             variant="minimal"
@@ -65,8 +65,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6, ease: [0.25, 0.4, 0.25, 1] }}
         >
-          A live small-group reset for mentally tired women who need clarity,
-          emotional breathing room, and peace again.
+          A live, faith-rooted small-group reset for mentally tired women. We calm the overthinking using mindfulness and proven CBT tools, then anchor it all in God's presence so you can finally breathe again.
         </motion.p>
 
         <motion.ul
@@ -76,10 +75,10 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.8, ease: [0.25, 0.4, 0.25, 1] }}
         >
           {[
-            "June 9–11, 2026",
-            "7:30 PM – 9:30 PM via Zoom",
-            "Small group only",
-            "Open to all women seeking clarity, healing, and emotional renewal",
+            "July 7 to 9, 2026 (Tuesday to Thursday)",
+            "7:00 PM to 9:30 PM via Zoom",
+            "Small group only, so you are truly seen",
+            "Faith-rooted, grounded in CBT and mindfulness",
           ].map((item) => (
             <li
               key={item}
@@ -107,7 +106,10 @@ const HeroSection = () => {
             </Button>
           </a>
           <p className="text-sm text-foreground/70">
-            Starts June 9 • Limited seats available
+            Starts July 7. Limited seats available.
+          </p>
+          <p className="text-sm text-foreground/70 max-w-xl">
+            Led by Coach Pow: certified CBT and mindfulness coach, certified Christian counselor, and former nurse.
           </p>
         </motion.div>
       </div>

@@ -27,10 +27,10 @@ const FloatingCta = () => {
           <div className="text-center sm:text-left">
             <div className="flex items-center justify-center sm:justify-start gap-2 mb-1">
               <Flame className="w-4 h-4 text-primary" />
-              <span className="text-xs font-semibold text-primary tracking-wide uppercase">Early Bird Until June 7</span>
+              <span className="text-xs font-semibold text-primary tracking-wide uppercase">Early Bird Until July 3</span>
             </div>
             <p className="text-sm text-muted-foreground">
-              Join for ₱999 (Save ₱500) • Starts June 9
+              Join for ₱999 (Save ₱500) • Starts July 7
             </p>
           </div>
           

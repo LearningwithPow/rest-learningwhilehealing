@@ -1,11 +1,11 @@
-import { Check, Flame, Timer } from "lucide-react";
+import { Check, Timer } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ScrollReveal from "@/components/ScrollReveal";
 import CountdownTimer from "@/components/CountdownTimer";
 
 const ValueStackPremiumSection = () => {
   const inclusions = [
-    { item: "3 Coaching Nights (2 hrs each)", value: "₱15,000" },
+    { item: "3 Coaching Nights (2.5 hrs each)", value: "₱15,000" },
     {
       item: "Pre-Reset Self-Discovery Assessment",
       subline: "A guided self-discovery to personalize your Day 1 experience.",
@@ -86,23 +86,19 @@ const ValueStackPremiumSection = () => {
               <div className="bg-card rounded-xl p-5 sm:p-6 text-center mb-5 sm:mb-6 shadow-soft">
                 <div className="mb-5">
                   <CountdownTimer
-                    targetDate="2026-06-07T23:59:00+08:00"
+                    targetDate="2026-07-03T23:59:00+08:00"
                     label="Early Bird Price Ends In"
-                    endedMessage="Early Bird has ended. Regular price ₱1,499 now applies."
-                    belowText="After June 7, price increases to ₱1,499"
+                    endedMessage="Early bird has ended. Regular price ₱1,499 now applies."
+                    belowText="After July 3, price increases to ₱1,499"
                     variant="prominent"
                   />
                 </div>
-                <p className="text-xs sm:text-sm font-medium text-muted-foreground mb-1 uppercase tracking-wide">
-                  Today Only
-                </p>
                 <p className="font-serif text-5xl md:text-5xl font-bold text-primary mb-3 leading-none">
                   ₱999
                 </p>
-                <div className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1">
-                  <Flame className="w-3.5 h-3.5 text-primary" />
-                  <span className="text-xs font-medium text-foreground/80">You Save ₱18,000+</span>
-                </div>
+                <p className="text-xs sm:text-sm font-medium text-muted-foreground/90 leading-relaxed">
+                  Worth far more than the price. Yours for ₱999 during early bird.
+                </p>
               </div>
 
               <a
@@ -119,7 +115,7 @@ const ValueStackPremiumSection = () => {
               <div className="flex items-center justify-center gap-2 mt-4 text-muted-foreground/80">
                 <Timer className="w-4 h-4 flex-shrink-0" />
                 <p className="text-[11px] sm:text-xs">
-                  Starts June 9 • Small group only
+                  Starts July 7 • Small group only
                 </p>
               </div>
             </div>
