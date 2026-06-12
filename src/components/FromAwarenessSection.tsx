@@ -45,6 +45,17 @@ const FromAwarenessSection = () => {
           ))}
         </div>
 
+        <ScrollReveal delay={0.45}>
+          <div className="max-w-xl mx-auto text-left mb-10 space-y-6">
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+              Learn to carry your story in a way that no longer holds you back, so what you have lived through becomes something you grow from, not something that defines you.
+            </p>
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed border-l-2 border-primary/20 pl-4 italic">
+              The honest, judgment-free sharing with other women is where the real shifts happen. In a small group, you are seen, and you are not alone in it.
+            </p>
+          </div>
+        </ScrollReveal>
+
         <ScrollReveal delay={0.5}>
           <p className="text-lg md:text-xl font-semibold text-foreground mb-4">
             This is where insight becomes integration.

@@ -4,20 +4,16 @@ import { Button } from "@/components/ui/button";
 const PainResonanceSection = () => {
   const points = [
     {
-      text: "Mentally tired but unable to rest",
-      subtext: "Your mind keeps running even when your body is still"
+      text: "Running on autopilot",
+      subtext: "Present for everyone else, but somewhere along the way you stopped feeling present for yourself."
     },
     {
-      text: "Emotionally heavy",
-      subtext: "Carrying feelings you have not had space to process"
+      text: "Guilty when you slow down",
+      subtext: "Like rest is something you have to earn, and pausing means you are falling behind."
     },
     {
-      text: "Overthinking everything",
-      subtext: "Analyzing conversations, decisions, and what-ifs on repeat"
-    },
-    {
-      text: "Self-aware but still stuck",
-      subtext: "You know what is wrong but cannot seem to shift it"
+      text: "You miss who you used to be",
+      subtext: "You sense this isn't fully you anymore, and you want to find your way back."
     },
   ];
 
