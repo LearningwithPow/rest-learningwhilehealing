@@ -88,6 +88,7 @@ const ValueStackPremiumSection = () => {
                   <CountdownTimer
                     targetDate="2026-07-03T23:59:00+08:00"
                     label="Early Bird Price Ends In"
+                    endedMessage="Early bird has ended. Regular price ₱1,499 now applies."
                     belowText="After July 3, price increases to ₱1,499"
                     variant="prominent"
                   />
