@@ -64,9 +64,12 @@ const SalesBridgeSection = () => {
               </p>
               <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5">
                 <span className="text-xs font-medium text-foreground/80 tracking-wide">
-                  Starts June 9 • Limited slots
+                  Starts July 7 • Limited slots
                 </span>
               </div>
+              <p className="text-sm text-muted-foreground/90 leading-relaxed mt-5 text-left">
+                We extended each session to 2.5 hours this round, because our past group told us the sharing was where the real breakthroughs happened. We didn't want to rush something so sacred. Hindi natin minamadali ang Diyos.
+              </p>
             </div>
 
             {/* CTA */}
