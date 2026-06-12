@@ -23,6 +23,12 @@ const batchTestimonials = [
       "Before REST Reset, I was carrying so much worry. But in just three days, my whole mindset changed. I learned it's okay to open up and reach out, because there really are people who will listen and are willing to help. It was so meaningful and impactful for me.",
     name: "J.A., Batch 1",
   },
+  {
+    label: "Science and Faith",
+    quote:
+      "A science AND faith based journey. I came in facing each day on autopilot. I left knowing our days are numbered, so I have to be intentional in my walk with God.",
+    name: "REST Reset participant, June 2026",
+  },
 ];
 
 const JourneySection = () => {
