@@ -50,6 +50,12 @@ const WalkAwaySection = () => {
             <span className="font-semibold">You become someone who knows how to create inner order.</span>
           </p>
         </ScrollReveal>
+
+        <ScrollReveal delay={0.65}>
+          <p className="text-lg md:text-xl text-muted-foreground mt-8 max-w-xl mx-auto leading-relaxed border-t border-primary/10 pt-8 italic font-serif">
+            Permission to rest without guilt, and the understanding that slowing down is not weakness. You were designed to need it.
+          </p>
+        </ScrollReveal>
       </div>
     </section>
   );
