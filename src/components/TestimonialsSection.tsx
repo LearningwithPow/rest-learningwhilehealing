@@ -9,12 +9,6 @@ const testimonials = [
     name: "Alfreash",
   },
   {
-    label: "Science and Faith",
-    quote:
-      "A science AND faith based journey. I came in facing each day on autopilot. I left knowing our days are numbered, so I have to be intentional in my walk with God.",
-    name: "REST Reset participant, June 2026",
-  },
-  {
     label: "Reduced Anxiety + Peace",
     quote:
       "My anxiety lessened. I gained healthier habits, more peace of mind, and experienced real life change.",
