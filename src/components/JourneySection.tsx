@@ -12,22 +12,22 @@ const images = [
 
 const batchTestimonials = [
   {
-    label: "From Overwhelmed to Enlightened",
+    label: "Transformation",
     quote:
       "I came in upset and overwhelmed. I left enlightened, seeing truths I'd taken for granted, and with a deep desire to know God intentionally. I'm a work in progress, and that's okay.",
-    name: "REST Reset Participant, Batch 1",
+    name: "REST Reset Participant, April 2026",
   },
   {
-    label: "Okay to Reach Out",
+    label: "Connection",
     quote:
       "Before REST Reset, I was carrying so much worry. But in just three days, my whole mindset changed. I learned it's okay to open up and reach out, because there really are people who will listen and are willing to help. It was so meaningful and impactful for me.",
-    name: "J.A., Batch 1",
+    name: "REST Reset Participant, April 2026",
   },
   {
-    label: "Science and Faith",
+    label: "Faith & Healing",
     quote:
       "A science AND faith based journey. I came in facing each day on autopilot. I left knowing our days are numbered, so I have to be intentional in my walk with God.",
-    name: "REST Reset participant, June 2026",
+    name: "REST Reset Participant, June 2026",
   },
 ];
 
@@ -77,12 +77,12 @@ const JourneySection = () => {
             </ScrollReveal>
             <ScrollReveal delay={0.1}>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                Real reflections from the women who joined our April 2026 REST Reset.
+              Real reflections from women who experienced REST Reset in 2026.
               </p>
             </ScrollReveal>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto items-stretch">
             {batchTestimonials.map((t, index) => (
               <ScrollReveal key={t.label} delay={0.15 + index * 0.08}>
                 <article className="h-full bg-card rounded-2xl p-7 md:p-8 shadow-soft flex flex-col transition-all duration-500 hover:shadow-glow">
