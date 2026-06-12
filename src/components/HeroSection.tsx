@@ -98,16 +98,16 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 1.0, ease: [0.25, 0.4, 0.25, 1] }}
         >
           <a
-            href="https://www.facebook.com/LearningWhileHealing/"
+            href="https://checkout.xendit.co/od/RESTJune2026"
             target="_blank"
             rel="noopener noreferrer"
           >
             <Button variant="calm" size="calm">
-              Follow Us on Facebook
+              Yes, I Need This Reset
             </Button>
           </a>
           <p className="text-sm text-foreground/70">
-            Registration is closed • Follow us for the next group
+            Starts June 9 • Limited seats available
           </p>
         </motion.div>
       </div>

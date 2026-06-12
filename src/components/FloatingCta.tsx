@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Facebook, Leaf } from "lucide-react";
+import { Flame } from "lucide-react";
 
 const FloatingCta = () => {
   const [visible, setVisible] = useState(false);
@@ -26,22 +26,21 @@ const FloatingCta = () => {
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
           <div className="text-center sm:text-left">
             <div className="flex items-center justify-center sm:justify-start gap-2 mb-1">
-              <Leaf className="w-4 h-4 text-primary" />
-              <span className="text-xs font-semibold text-primary tracking-wide uppercase">Registration Closed</span>
+              <Flame className="w-4 h-4 text-primary" />
+              <span className="text-xs font-semibold text-primary tracking-wide uppercase">Early Bird Until June 7</span>
             </div>
             <p className="text-sm text-muted-foreground">
-              Follow us to hear when the next REST Reset group opens.
+              Join for ₱999 (Save ₱500) • Starts June 9
             </p>
           </div>
           
           <a
-            href="https://www.facebook.com/LearningWhileHealing/"
+            href="https://checkout.xendit.co/od/RESTJune2026"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 justify-center rounded-full bg-primary text-primary-foreground shadow-glow hover:scale-[1.02] transition-all duration-500 ease-out px-8 py-4 text-base font-medium whitespace-nowrap"
+            className="inline-flex items-center justify-center rounded-full bg-primary text-primary-foreground shadow-glow hover:scale-[1.02] transition-all duration-500 ease-out px-8 py-4 text-base font-medium whitespace-nowrap"
           >
-            <Facebook className="w-5 h-5" />
-            Follow Us on Facebook
+            Yes, I Need This
           </a>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import { Facebook, Sparkles } from "lucide-react";
+import { ShieldCheck, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ScrollReveal from "@/components/ScrollReveal";
 
@@ -9,29 +9,45 @@ const FinalCtaSection = () => {
         <ScrollReveal>
           <div className="inline-flex items-center gap-2 mb-4 sm:mb-6">
             <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
-            <span className="text-xs sm:text-sm font-medium text-primary tracking-wide">Stay Connected</span>
+            <span className="text-xs sm:text-sm font-medium text-primary tracking-wide">A Gentle Invitation</span>
           </div>
         </ScrollReveal>
         
         <ScrollReveal delay={0.05}>
           <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-4 sm:mb-6 leading-tight">
-            Be the First to Know About the Next REST Reset
+            You Do Not Need To Carry This Alone Anymore
           </h2>
         </ScrollReveal>
         
         <ScrollReveal delay={0.1}>
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed mb-6 max-w-xl mx-auto">
-            Our June 2026 group has already begun. Follow our Facebook community to hear when the next group opens, and to receive gentle encouragement along the way.
+            Join REST Reset and give your mind, body, and soul space to breathe again.
           </p>
         </ScrollReveal>
         
+        <ScrollReveal delay={0.15}>
+          <div className="bg-primary/10 rounded-2xl px-4 sm:px-6 py-3 sm:py-4 mb-6 sm:mb-8 inline-block">
+            <p className="text-sm sm:text-base text-muted-foreground">
+              Limited slots only • Starts June 9
+            </p>
+          </div>
+        </ScrollReveal>
+        
         <ScrollReveal delay={0.2}>
-          <a href="https://www.facebook.com/LearningWhileHealing/" target="_blank" rel="noopener noreferrer">
+          <a href="https://checkout.xendit.co/od/RESTJune2026" target="_blank" rel="noopener noreferrer">
             <Button variant="calm" size="calm" className="text-base">
-              <Facebook className="w-5 h-5" />
-              Follow Us on Facebook
+              Yes, I'm Ready for Renewal
             </Button>
           </a>
+          <p className="text-xs sm:text-sm text-muted-foreground mt-3 sm:mt-4">
+            Secure checkout via Xendit • GCash • Maya • Cards accepted
+          </p>
+          <div className="flex items-center justify-center gap-2 mt-3 sm:mt-4 text-muted-foreground/70">
+            <ShieldCheck className="w-3.5 h-3.5 sm:w-4 sm:h-4 flex-shrink-0" />
+            <p className="text-[10px] sm:text-xs">
+              Your information is protected and secure
+            </p>
+          </div>
         </ScrollReveal>
         
         <ScrollReveal delay={0.25}>
