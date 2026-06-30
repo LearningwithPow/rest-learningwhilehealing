@@ -52,7 +52,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.5, ease: [0.25, 0.4, 0.25, 1] }}
         >
           <CountdownTimer
-            targetDate="2026-07-07T19:00:00+08:00"
+            targetDate="2026-07-14T19:00:00+08:00"
             label="REST Reset Begins In"
             endedMessage="REST Reset is now live! 🙏"
             variant="minimal"
@@ -75,7 +75,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.8, ease: [0.25, 0.4, 0.25, 1] }}
         >
           {[
-            "July 7 to 9, 2026 (Tuesday to Thursday)",
+            "July 14 to 16, 2026 (Tuesday to Thursday)",
             "7:00 PM to 9:30 PM via Zoom",
             "Small group only, so you are truly seen",
             "Faith-rooted, grounded in CBT and mindfulness",
@@ -106,7 +106,7 @@ const HeroSection = () => {
             </Button>
           </a>
           <p className="text-sm text-foreground/70">
-            Starts July 7. Limited seats available.
+            Starts July 14. Limited seats available.
           </p>
           <p className="text-sm text-foreground/70 max-w-xl">
             Led by Coach Pow: certified CBT and mindfulness coach, certified Christian counselor, and former nurse.

@@ -73,7 +73,7 @@ const PainResonanceSection = () => {
             </Button>
           </a>
           <p className="text-sm text-muted-foreground mt-4">
-            Starts July 7 • Small group only
+            Starts July 14 • Small group only
           </p>
         </ScrollReveal>
       </div>

@@ -28,7 +28,7 @@ const FinalCtaSection = () => {
         <ScrollReveal delay={0.15}>
           <div className="bg-primary/10 rounded-2xl px-4 sm:px-6 py-3 sm:py-4 mb-6 sm:mb-8 inline-block">
             <p className="text-sm sm:text-base text-muted-foreground">
-              Limited slots only • Starts July 7
+              Limited slots only • Starts July 14
             </p>
           </div>
         </ScrollReveal>
