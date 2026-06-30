@@ -10,4 +10,4 @@ REST Reset is held July 14 to 16, 2026 (Tuesday to Thursday), 7:00 PM to 9:30 PM
 
 ## Optional
 
-- [Checkout](https://checkout.xendit.co/od/RESTJune2026): Secure checkout for REST Reset (Xendit, GCash, Maya, cards).
+- [Checkout](https://checkout.xendit.co/od/RESTJuly2026): Secure checkout for REST Reset (Xendit, GCash, Maya, cards).

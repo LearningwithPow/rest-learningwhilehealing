@@ -102,9 +102,7 @@ const ValueStackPremiumSection = () => {
               </div>
 
               <a
-                href="https://checkout.xendit.co/od/RESTJune2026"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="https://checkout.xendit.co/od/RESTJuly2026"
                 className="block w-full"
               >
                 <Button variant="calm" size="calm" className="w-full text-base">
