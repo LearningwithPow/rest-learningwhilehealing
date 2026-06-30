@@ -86,10 +86,10 @@ const ValueStackPremiumSection = () => {
               <div className="bg-card rounded-xl p-5 sm:p-6 text-center mb-5 sm:mb-6 shadow-soft">
                 <div className="mb-5">
                   <CountdownTimer
-                    targetDate="2026-07-11T23:59:00+08:00"
+                    targetDate="2026-07-24T23:59:00+08:00"
                     label="Early Bird Price Ends In"
                     endedMessage="Early bird has ended. Regular price ₱1,499 now applies."
-                    belowText="After July 11, price increases to ₱1,499"
+                    belowText="After July 24, price increases to ₱1,499"
                     variant="prominent"
                   />
                 </div>
@@ -113,7 +113,7 @@ const ValueStackPremiumSection = () => {
               <div className="flex items-center justify-center gap-2 mt-4 text-muted-foreground/80">
                 <Timer className="w-4 h-4 flex-shrink-0" />
                 <p className="text-[11px] sm:text-xs">
-                  Starts July 14 • Small group only
+                  Starts July 28 • Small group only
                 </p>
               </div>
             </div>
