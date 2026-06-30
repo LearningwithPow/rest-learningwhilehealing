@@ -83,9 +83,7 @@ const ValueStackSection = () => {
         <ScrollReveal delay={0.25}>
           <div className="mt-10">
             <a
-              href="https://checkout.xendit.co/od/RESTJune2026"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="https://checkout.xendit.co/od/RESTJuly2026"
             >
               <Button variant="calm" size="calm">
                 Yes, I Need This Reset

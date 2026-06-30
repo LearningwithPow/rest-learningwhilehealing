@@ -108,7 +108,7 @@ const DetailsPricingSection = () => {
 
         {/* CTA */}
         <ScrollReveal delay={0.35}>
-          <a href="https://checkout.xendit.co/od/RESTJune2026" target="_blank" rel="noopener noreferrer">
+          <a href="https://checkout.xendit.co/od/RESTJuly2026">
             <Button variant="calm" size="calm">
               Reserve My Spot
             </Button>
