@@ -40,7 +40,7 @@ const FinalCtaSection = () => {
             </Button>
           </a>
           <p className="text-xs sm:text-sm text-muted-foreground mt-3 sm:mt-4">
-            Secure checkout via Xendit • GCash • Maya • Cards accepted
+            Secure checkout via Xendit • GCash • Maya • Debit Cards accepted
           </p>
           <div className="flex items-center justify-center gap-2 mt-3 sm:mt-4 text-muted-foreground/70">
             <ShieldCheck className="w-3.5 h-3.5 sm:w-4 sm:h-4 flex-shrink-0" />
