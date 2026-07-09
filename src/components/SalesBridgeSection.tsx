@@ -68,7 +68,7 @@ const SalesBridgeSection = () => {
                 </span>
               </div>
               <p className="text-sm text-muted-foreground/90 leading-relaxed mt-5 text-left">
-                We extended each session to 2.5 hours this round, because our past group told us the sharing was where the real breakthroughs happened. We didn't want to rush something so sacred. Hindi natin minamadali ang Diyos.
+                We extended each session to 2.5 hours this round, because our past group told us the sharing was where the real breakthroughs happened. We didn't want to rush something so sacred.&nbsp;
               </p>
             </div>
 
