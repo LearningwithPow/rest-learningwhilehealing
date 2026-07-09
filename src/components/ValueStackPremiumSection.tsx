@@ -14,6 +14,7 @@ const ValueStackPremiumSection = () => {
     { item: "Reflection Workbook", value: "₱500" },
     { item: "Emotional Regulation Tools", value: "₱1,000" },
     { item: "Guided Support", value: "₱2,500" },
+    { item: "5-Day SPACE Premium Access", value: "₱250" },
     { item: "Safe Community", value: "Priceless" },
   ];
 
@@ -79,7 +80,7 @@ const ValueStackPremiumSection = () => {
                   Total Value
                 </p>
                 <p className="font-serif text-3xl sm:text-4xl md:text-5xl font-semibold text-muted-foreground/80 line-through">
-                  ₱19,750+
+                  ₱20,000+
                 </p>
               </div>
 
