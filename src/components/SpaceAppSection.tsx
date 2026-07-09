@@ -386,16 +386,16 @@ const SpaceAppSection = () => {
   return (
     <section className="section-calm bg-gradient-to-b from-background via-[hsl(270,25%,96%)] to-background overflow-hidden">
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-          {/* Phone (order-first on mobile) */}
-          <div className="lg:order-2">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+          {/* Phone first on mobile */}
+          <div className="order-1 lg:order-2">
             <ScrollReveal delay={0.1}>
               <PhoneMockup />
             </ScrollReveal>
           </div>
 
           {/* Copy */}
-          <div className="lg:order-1 text-center lg:text-left">
+          <div className="order-2 lg:order-1 text-center lg:text-left px-2">
             <ScrollReveal>
               <span className="inline-flex items-center gap-2 rounded-full bg-primary/10 border border-primary/20 px-4 py-1.5 text-xs sm:text-sm font-medium text-primary/90 mb-6">
                 <span aria-hidden>✨</span>
@@ -405,7 +405,7 @@ const SpaceAppSection = () => {
 
             <ScrollReveal delay={0.05}>
               <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground leading-[1.15] mb-6">
-                REST Reset Doesn't End When Zoom Ends
+                Your Journey Begins Before Day One
               </h2>
             </ScrollReveal>
 
@@ -416,7 +416,7 @@ const SpaceAppSection = () => {
                   <span className="text-foreground font-medium">SPACE</span>, beginning July 27, one day before our workshop begins.
                 </p>
                 <p>
-                  Throughout REST Reset, SPACE becomes your daily companion where you can practice what you're learning through guided reflection, Scripture, prayer, journaling, and peaceful habits.
+                  Throughout REST Reset, SPACE becomes your daily companion for practicing what you're learning through guided reflection, Scripture, prayer, journaling, and peaceful habits.
                 </p>
                 <p>
                   By the end of the workshop, you won't just understand the principles. You'll already be living them.
