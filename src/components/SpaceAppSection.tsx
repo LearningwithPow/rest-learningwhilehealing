@@ -121,12 +121,12 @@ const PhoneMockup = () => {
         aria-hidden
         className="absolute inset-0 flex items-center justify-center pointer-events-none"
       >
-        <div className="w-[340px] h-[340px] rounded-full bg-gradient-to-br from-primary/25 via-accent/30 to-[hsl(160,40%,75%)]/20 blur-3xl" />
+        <div className="w-[420px] h-[420px] rounded-full bg-gradient-to-br from-primary/30 via-accent/35 to-[hsl(160,40%,75%)]/25 blur-3xl animate-pulse" style={{ animationDuration: "6s" }} />
       </div>
 
       <motion.div
-        animate={prefersReducedMotion ? {} : { y: [0, -10, 0] }}
-        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+        animate={prefersReducedMotion ? {} : { y: [0, -8, 0] }}
+        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
         className="relative"
       >
         {/* Phone frame */}
@@ -142,22 +142,22 @@ const PhoneMockup = () => {
           }}
           onFocus={activate}
           onBlur={deactivate}
-          className="relative block w-[260px] sm:w-[288px] h-[560px] sm:h-[620px] rounded-[3rem] bg-[#1a1424] p-[10px] shadow-[0_30px_80px_-20px_hsl(270,40%,40%,0.35)] focus:outline-none focus-visible:ring-4 focus-visible:ring-primary/40 focus-visible:ring-offset-4 focus-visible:ring-offset-transparent"
+          className="relative block w-[264px] sm:w-[292px] h-[572px] sm:h-[632px] rounded-[2.75rem] bg-[#120e19] p-[5px] shadow-[0_40px_100px_-30px_hsl(270,40%,35%,0.5),0_10px_30px_-10px_hsl(270,30%,30%,0.25)] ring-1 ring-black/40 focus:outline-none focus-visible:ring-4 focus-visible:ring-primary/40 focus-visible:ring-offset-4 focus-visible:ring-offset-transparent"
         >
           {/* Screen */}
-          <div className="relative w-full h-full rounded-[2.4rem] overflow-hidden bg-card">
+          <div className="relative w-full h-full rounded-[2.5rem] overflow-hidden bg-card">
             {/* Notch */}
-            <div className="absolute top-2 left-1/2 -translate-x-1/2 w-24 h-6 bg-[#1a1424] rounded-full z-20" />
+            <div className="absolute top-2 left-1/2 -translate-x-1/2 w-24 h-6 bg-[#120e19] rounded-full z-20" />
 
             <AnimatePresence mode="wait">
               <motion.img
                 key={current.src}
                 src={current.src}
                 alt={current.alt}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.9, ease: "easeInOut" }}
+                initial={{ opacity: 0, scale: 1.02 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 1.02 }}
+                transition={{ duration: 1.1, ease: [0.25, 0.4, 0.25, 1] }}
                 loading="lazy"
                 decoding="async"
                 className="absolute inset-0 w-full h-full object-cover object-top"
