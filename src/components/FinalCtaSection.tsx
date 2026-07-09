@@ -36,7 +36,7 @@ const FinalCtaSection = () => {
         <ScrollReveal delay={0.2}>
           <a href="https://checkout.xendit.co/od/RESTJuly2026">
             <Button variant="calm" size="calm" className="text-base">
-              Yes, I'm Ready for Renewal
+              Yes, I Need This Reset
             </Button>
           </a>
           <p className="text-xs sm:text-sm text-muted-foreground mt-3 sm:mt-4">
