@@ -1,7 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import SalesBridgeSection from "@/components/SalesBridgeSection";
 import ValueStackPremiumSection from "@/components/ValueStackPremiumSection";
-import SpaceBonusSection from "@/components/SpaceBonusSection";
 import SpaceAppSection from "@/components/SpaceAppSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import JourneySection from "@/components/JourneySection";
@@ -20,13 +19,12 @@ const Index = () => {
       <PainResonanceSection />
       <FromAwarenessSection />
       <TestimonialsSection />
-      <WalkAwaySection />
-      <SpaceBonusSection />
       <JourneySection />
+      <WalkAwaySection />
+      <SpaceAppSection />
       <div id="pricing">
         <ValueStackPremiumSection />
       </div>
-      <SpaceAppSection />
       <FinalCtaSection />
 
       <FloatingCta />

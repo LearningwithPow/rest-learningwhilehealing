@@ -398,8 +398,7 @@ const SpaceAppSection = () => {
           <div className="order-2 lg:order-1 text-center lg:text-left px-2">
             <ScrollReveal>
               <span className="inline-flex items-center gap-2 rounded-full bg-primary/10 border border-primary/20 px-4 py-1.5 text-xs sm:text-sm font-medium text-primary/90 mb-6">
-                <span aria-hidden>✨</span>
-                Included with every REST Reset registration
+                BONUS · INCLUDED WITH YOUR SEAT
               </span>
             </ScrollReveal>
 
@@ -442,6 +441,26 @@ const SpaceAppSection = () => {
               </ul>
             </ScrollReveal>
           </div>
+        </div>
+
+        {/* Closing copy */}
+        <div className="max-w-3xl mx-auto text-center mt-16 md:mt-20 px-4 sm:px-6">
+          <ScrollReveal>
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-4">
+              Your seat includes 5 days of full premium access to{" "}
+              <span className="text-foreground font-medium">SPACE</span>, our guided app for
+              breathing, scripture, journaling, and evening wind-downs. Use it between our three
+              evenings, so what you learn at night becomes what you practice the next day. After
+              the workshop, you'll be invited to continue as a founding member, but there's no
+              obligation and nothing to cancel. The 5 days are simply yours.
+            </p>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.05}>
+            <p className="text-sm md:text-base text-foreground/80 font-medium leading-relaxed">
+              No credit card needed for access. We'll set you up on Day 1.
+            </p>
+          </ScrollReveal>
         </div>
 
         {/* Timeline */}
