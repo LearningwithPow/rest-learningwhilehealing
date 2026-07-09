@@ -3,7 +3,7 @@
 // supabase function: mcp
 // Bundled from src/lib/mcp/index.ts by @lovable.dev/mcp-js.
 // src/lib/mcp/index.ts
-import { defineMcp } from "npm:@lovable.dev/mcp-js@0.20.0";
+import { auth, defineMcp } from "npm:@lovable.dev/mcp-js@0.20.0";
 
 // src/lib/mcp/tools/get-event-info.ts
 import { defineTool } from "npm:@lovable.dev/mcp-js@0.20.0";
@@ -93,11 +93,16 @@ var get_rest_framework_default = defineTool4({
 });
 
 // src/lib/mcp/index.ts
+var projectRef = "ippkefhwndptxnlwtugc";
 var mcp_default = defineMcp({
   name: "rest-reset-mcp",
   title: "REST Reset",
   version: "0.1.0",
-  instructions: "Public tools for the REST Reset July 2026 event by Learning While Healing. Use these tools to answer questions about the event schedule, pricing, checkout link, and the REST framework.",
+  instructions: "Tools for the REST Reset July 2026 event by Learning While Healing. Requires sign-in. Use these tools to answer questions about the event schedule, pricing, checkout link, and the REST framework.",
+  auth: auth.oauth.issuer({
+    issuer: `https://${projectRef}.supabase.co/auth/v1`,
+    acceptedAudiences: "authenticated"
+  }),
   tools: [get_event_info_default, get_pricing_default, get_checkout_url_default, get_rest_framework_default]
 });
 
