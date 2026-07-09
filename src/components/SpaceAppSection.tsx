@@ -2,81 +2,139 @@ import { useEffect, useRef, useState } from "react";
 import { motion, useReducedMotion, AnimatePresence } from "framer-motion";
 import ScrollReveal from "@/components/ScrollReveal";
 import screen1 from "@/assets/space/space-2.png.asset.json";
-import screen2 from "@/assets/space/space-9.png.asset.json";
-import screen3 from "@/assets/space/space-8.png.asset.json";
-import screen4 from "@/assets/space/space-3.png.asset.json";
+import screen2 from "@/assets/space/space-8.png.asset.json";
+import screen3 from "@/assets/space/space-3.png.asset.json";
+import screen4 from "@/assets/space/space-9.png.asset.json";
 
-const screens = [
+type Scene = {
+  src: string;
+  alt: string;
+  label: string;
+  hotspot: { top: string; left: string };
+  callout: { icon: string; title: string; body: string };
+  overlays: Array<{
+    kind: "greeting" | "badge" | "highlight";
+    text?: string;
+    icon?: string;
+    position: { top?: string; left?: string; right?: string; bottom?: string };
+    delay: number;
+    width?: string;
+    height?: string;
+  }>;
+};
+
+const scenes: Scene[] = [
   {
     src: screen1.url,
-    alt: "SPACE app home screen with today's gentle reset",
+    alt: "SPACE app home screen",
     label: "Home",
-    hotspot: { top: "38%", left: "50%" },
+    hotspot: { top: "42%", left: "50%" },
     callout: {
       icon: "🌿",
       title: "Daily Check-in",
-      body: "Start your day with intention and peace.",
+      body: "Begin each day with intention and peace.",
     },
+    overlays: [
+      {
+        kind: "greeting",
+        text: "Welcome back.\nLet's create space together.",
+        position: { top: "9%", left: "6%", right: "6%" },
+        delay: 0.4,
+      },
+    ],
   },
   {
     src: screen2.url,
-    alt: "SPACE Insights screen showing your journey and streak",
-    label: "Insights",
-    hotspot: { top: "34%", left: "50%" },
+    alt: "SPACE Reflection screen",
+    label: "Reflection",
+    hotspot: { top: "40%", left: "50%" },
     callout: {
-      icon: "📈",
-      title: "Peace Insights",
-      body: "See your progress and celebrate your Journey of Peace.",
+      icon: "✍️",
+      title: "Guided Journal",
+      body: "Capture what God is teaching you today.",
     },
+    overlays: [
+      {
+        kind: "badge",
+        icon: "✨",
+        text: "Today's Reflection Completed",
+        position: { top: "18%", left: "8%" },
+        delay: 0.6,
+      },
+      {
+        kind: "badge",
+        icon: "🌿",
+        text: "Creating Space",
+        position: { bottom: "22%", right: "8%" },
+        delay: 1.4,
+      },
+    ],
   },
   {
     src: screen3.url,
-    alt: "SPACE Scripture reflection with a verse for today",
+    alt: "SPACE Scripture screen",
     label: "Scripture",
-    hotspot: { top: "38%", left: "50%" },
+    hotspot: { top: "52%", left: "50%" },
     callout: {
       icon: "📖",
       title: "Scripture Reflection",
       body: "Reflect on God's Word with practical coaching prompts.",
     },
+    overlays: [
+      {
+        kind: "highlight",
+        text: "Journal with this verse",
+        position: { bottom: "12%", left: "10%", right: "10%" },
+        delay: 0.6,
+      },
+    ],
   },
   {
     src: screen4.url,
-    alt: "SPACE Today's SPACE guided prayer and practice",
-    label: "Today",
-    hotspot: { top: "55%", left: "50%" },
+    alt: "SPACE Insights screen",
+    label: "Insights",
+    hotspot: { top: "34%", left: "50%" },
     callout: {
-      icon: "🙏",
-      title: "Guided Prayer",
-      body: "Pause and reconnect with God in just a few minutes.",
+      icon: "📈",
+      title: "Journey Insights",
+      body: "Celebrate your progress one peaceful step at a time.",
     },
+    overlays: [
+      {
+        kind: "badge",
+        icon: "🌿",
+        text: "Your Journey Continues",
+        position: { top: "22%", right: "8%" },
+        delay: 0.7,
+      },
+    ],
   },
 ];
 
 const chips = [
   { icon: "🌿", label: "Daily Check-ins" },
   { icon: "🙏", label: "Guided Prayer" },
-  { icon: "📖", label: "Scripture Reflections" },
+  { icon: "📖", label: "Scripture Reflection" },
   { icon: "✍️", label: "Guided Journaling" },
   { icon: "✨", label: "Peace Practices" },
-  { icon: "📈", label: "Mood & Progress Insights" },
+  { icon: "📈", label: "Journey Insights" },
 ];
 
 const timeline = [
   {
     date: "July 27",
     icon: "📱",
-    text: "Receive complimentary SPACE Premium access",
+    text: "Receive complimentary SPACE Premium access.",
   },
   {
     date: "July 28–30",
     icon: "💜",
-    text: "Attend REST Reset live on Zoom. Practice each day's lesson inside SPACE.",
+    text: "Attend REST Reset Live. Practice each day's lesson inside SPACE.",
   },
   {
-    date: "July 30",
+    date: "After REST Reset",
     icon: "🌱",
-    text: "Receive an invitation to join the exclusive SPACE Founders Circle",
+    text: "Receive an invitation to join the exclusive SPACE Founders Circle and continue your journey with SPACE.",
   },
 ];
 
