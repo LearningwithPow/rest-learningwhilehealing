@@ -26,6 +26,7 @@ const Index = () => {
       <div id="pricing">
         <ValueStackPremiumSection />
       </div>
+      <FAQSection />
       <FinalCtaSection />
 
       <FloatingCta />
