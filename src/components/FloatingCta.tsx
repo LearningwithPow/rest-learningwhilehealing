@@ -38,7 +38,7 @@ const FloatingCta = () => {
             href="https://checkout.xendit.co/od/RESTJuly2026"
             className="inline-flex items-center justify-center rounded-full bg-primary text-primary-foreground shadow-glow hover:scale-[1.02] transition-all duration-500 ease-out px-8 py-4 text-base font-medium whitespace-nowrap"
           >
-            Yes, I Need This
+            Yes, I Need This Reset
           </a>
         </div>
       </div>

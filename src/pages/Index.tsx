@@ -2,6 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import SalesBridgeSection from "@/components/SalesBridgeSection";
 import ValueStackPremiumSection from "@/components/ValueStackPremiumSection";
 import SpaceAppSection from "@/components/SpaceAppSection";
+import FAQSection from "@/components/FAQSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import JourneySection from "@/components/JourneySection";
 import PainResonanceSection from "@/components/PainResonanceSection";

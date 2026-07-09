@@ -47,7 +47,7 @@ const TestimonialsSection = () => {
         <div className="text-center max-w-3xl mx-auto mb-14">
           <ScrollReveal>
             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-4 leading-tight">
-              Real Women. Real Peace. Real Transformation.
+              Real Stories. Real Peace. Real Transformation.
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={0.1}>

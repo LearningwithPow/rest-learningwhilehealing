@@ -107,7 +107,7 @@ const ValueStackPremiumSection = () => {
                 className="block w-full"
               >
                 <Button variant="calm" size="calm" className="w-full text-base">
-                  Yes, I Want REST Reset
+                  Yes, I Need This Reset
                 </Button>
               </a>
 

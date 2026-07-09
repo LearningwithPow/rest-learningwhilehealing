@@ -89,7 +89,7 @@ const ExitIntentPopup = () => {
           onClick={() => setOpen(false)}
         >
           <Button variant="calm" size="calm" className="w-full">
-            Yes, Save My Spot Now
+            Yes, I Need This Reset
           </Button>
         </a>
         
