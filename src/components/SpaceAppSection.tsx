@@ -122,9 +122,9 @@ const chips = [
 
 const timeline = [
   {
-    date: "July 27",
+    date: "July 24",
     icon: "📱",
-    text: "Receive complimentary SPACE Premium access.",
+    text: "Receive your complimentary SPACE Premium access and complete your pre-workshop assessment.",
   },
   {
     date: "July 28–30",
@@ -411,8 +411,8 @@ const SpaceAppSection = () => {
             <ScrollReveal delay={0.1}>
               <div className="space-y-4 text-base md:text-lg text-muted-foreground leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0">
                 <p>
-                  Every REST Reset participant receives a complimentary 5-day Premium Experience with{" "}
-                  <span className="text-foreground font-medium">SPACE</span>, beginning July 27, one day before our workshop begins.
+                  Every REST Reset participant receives a complimentary 7-day Premium Experience with{" "}
+                  <span className="text-foreground font-medium">SPACE</span>, beginning July 24, four days before our workshop begins.
                 </p>
                 <p>
                   Throughout REST Reset, SPACE becomes your daily companion for practicing what you're learning through guided reflection, Scripture, prayer, journaling, and peaceful habits.
@@ -447,12 +447,12 @@ const SpaceAppSection = () => {
         <div className="max-w-3xl mx-auto text-center mt-16 md:mt-20 px-4 sm:px-6">
           <ScrollReveal>
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-4">
-              Your seat includes 5 days of full premium access to{" "}
+              Your seat includes 7 days of full premium access to{" "}
               <span className="text-foreground font-medium">SPACE</span>, our guided app for
               breathing, scripture, journaling, and evening wind-downs. Use it between our three
               evenings, so what you learn at night becomes what you practice the next day. After
               the workshop, you'll be invited to continue as a founding member, but there's no
-              obligation and nothing to cancel. The 5 days are simply yours.
+              obligation and nothing to cancel. The 7 days are simply yours.
             </p>
           </ScrollReveal>
 
@@ -467,7 +467,7 @@ const SpaceAppSection = () => {
         <div className="mt-20 md:mt-28">
           <ScrollReveal>
             <p className="text-center text-xs sm:text-sm font-semibold tracking-[0.2em] uppercase text-primary/70 mb-8">
-              Your 5-Day Journey
+              Your 7-Day Journey
             </p>
           </ScrollReveal>
 
