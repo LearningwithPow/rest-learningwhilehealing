@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "sdk_version": "0.20.0",
+  "path": "/functions/v1/mcp",
+  "auth": {
+    "type": "none"
+  },
+  "mcp": {
+    "server": {
+      "name": "rest-reset-mcp",
+      "version": "0.1.0",
+      "title": "REST Reset"
+    },
+    "tools": [
+      {
+        "name": "get_event_info",
+        "title": "Get REST Reset event info",
+        "description": "Returns the REST Reset event schedule, timezone, and session times.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "get_pricing",
+        "title": "Get REST Reset pricing",
+        "description": "Returns Early Bird and regular pricing plus the Early Bird deadline.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "get_checkout_url",
+        "title": "Get REST Reset checkout URL",
+        "description": "Returns the Xendit checkout URL for enrolling in REST Reset.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": true
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "get_rest_framework",
+        "title": "Get REST framework",
+        "description": "Returns the four pillars of the REST framework (Regulate, Explore, Separate, Talk).",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      }
+    ]
+  }
+}
