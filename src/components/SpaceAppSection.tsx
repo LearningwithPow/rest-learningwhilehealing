@@ -145,19 +145,35 @@ const PhoneMockup = () => {
   const [showCallout, setShowCallout] = useState(false);
   const prefersReducedMotion = useReducedMotion();
   const timerRef = useRef<number | null>(null);
+  const resumeRef = useRef<number | null>(null);
+  const touchStartX = useRef<number | null>(null);
 
   useEffect(() => {
     if (paused) return;
     timerRef.current = window.setInterval(() => {
-      setIndex((i) => (i + 1) % screens.length);
-    }, 4000);
+      setIndex((i) => (i + 1) % scenes.length);
+    }, 5000);
     return () => {
       if (timerRef.current) window.clearInterval(timerRef.current);
     };
   }, [paused]);
 
-  const activate = () => {
+  const scheduleResume = () => {
+    if (resumeRef.current) window.clearTimeout(resumeRef.current);
+    resumeRef.current = window.setTimeout(() => {
+      setPaused(false);
+      setShowHotspot(false);
+      setShowCallout(false);
+    }, 4000);
+  };
+
+  const pauseNow = () => {
     setPaused(true);
+    if (resumeRef.current) window.clearTimeout(resumeRef.current);
+  };
+
+  const activate = () => {
+    pauseNow();
     setShowHotspot(true);
   };
   const deactivate = () => {
@@ -166,25 +182,46 @@ const PhoneMockup = () => {
     setShowCallout(false);
   };
 
-  const current = screens[index];
+  const goTo = (next: number) => {
+    setIndex(((next % scenes.length) + scenes.length) % scenes.length);
+    pauseNow();
+    scheduleResume();
+  };
+
+  const current = scenes[index];
 
   return (
     <div
-      className="relative flex justify-center items-center py-8"
+      className="relative flex justify-center items-center py-6 sm:py-8 select-none"
       onMouseEnter={activate}
       onMouseLeave={deactivate}
+      onTouchStart={(e) => {
+        touchStartX.current = e.touches[0].clientX;
+        pauseNow();
+      }}
+      onTouchEnd={(e) => {
+        const start = touchStartX.current;
+        if (start == null) return;
+        const delta = e.changedTouches[0].clientX - start;
+        if (Math.abs(delta) > 40) {
+          goTo(index + (delta < 0 ? 1 : -1));
+        } else {
+          scheduleResume();
+        }
+        touchStartX.current = null;
+      }}
     >
       {/* Ambient glow */}
       <div
         aria-hidden
         className="absolute inset-0 flex items-center justify-center pointer-events-none"
       >
-        <div className="w-[420px] h-[420px] rounded-full bg-gradient-to-br from-primary/30 via-accent/35 to-[hsl(160,40%,75%)]/25 blur-3xl animate-pulse" style={{ animationDuration: "6s" }} />
+        <div className="w-[85vw] max-w-[460px] aspect-square rounded-full bg-gradient-to-br from-primary/30 via-accent/35 to-[hsl(160,40%,75%)]/25 blur-3xl animate-pulse" style={{ animationDuration: "8s" }} />
       </div>
 
       <motion.div
         animate={prefersReducedMotion ? {} : { y: [0, -8, 0] }}
-        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+        transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
         className="relative"
       >
         {/* Phone frame */}
@@ -200,7 +237,7 @@ const PhoneMockup = () => {
           }}
           onFocus={activate}
           onBlur={deactivate}
-          className="relative block w-[264px] sm:w-[292px] h-[572px] sm:h-[632px] rounded-[2.75rem] bg-[#120e19] p-[5px] shadow-[0_40px_100px_-30px_hsl(270,40%,35%,0.5),0_10px_30px_-10px_hsl(270,30%,30%,0.25)] ring-1 ring-black/40 focus:outline-none focus-visible:ring-4 focus-visible:ring-primary/40 focus-visible:ring-offset-4 focus-visible:ring-offset-transparent"
+          className="relative block w-[76vw] max-w-[300px] sm:w-[300px] aspect-[9/19.5] rounded-[2.75rem] bg-[#120e19] p-[4px] shadow-[0_50px_120px_-30px_hsl(270,40%,30%,0.55),0_10px_30px_-10px_hsl(270,30%,25%,0.28)] ring-1 ring-black/40 focus:outline-none focus-visible:ring-4 focus-visible:ring-primary/40 focus-visible:ring-offset-4 focus-visible:ring-offset-transparent"
         >
           {/* Screen */}
           <div className="relative w-full h-full rounded-[2.5rem] overflow-hidden bg-card">
@@ -215,11 +252,69 @@ const PhoneMockup = () => {
                 initial={{ opacity: 0, scale: 1.02 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 1.02 }}
-                transition={{ duration: 1.1, ease: [0.25, 0.4, 0.25, 1] }}
+                transition={{ duration: 1.2, ease: [0.25, 0.4, 0.25, 1] }}
                 loading="lazy"
                 decoding="async"
                 className="absolute inset-0 w-full h-full object-cover object-top"
               />
+            </AnimatePresence>
+
+            {/* Scene overlays */}
+            <AnimatePresence>
+              {current.overlays.map((o, i) => {
+                const style = {
+                  top: o.position.top,
+                  left: o.position.left,
+                  right: o.position.right,
+                  bottom: o.position.bottom,
+                };
+                if (o.kind === "greeting") {
+                  return (
+                    <motion.div
+                      key={`${current.label}-greet-${i}`}
+                      initial={{ opacity: 0, y: -6 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -6 }}
+                      transition={{ duration: 0.9, delay: o.delay, ease: [0.25, 0.4, 0.25, 1] }}
+                      style={style}
+                      className="absolute z-10 rounded-2xl bg-background/85 backdrop-blur-md border border-primary/10 px-4 py-3 shadow-soft"
+                    >
+                      <p className="font-serif text-[13px] leading-snug text-foreground whitespace-pre-line">
+                        {o.text}
+                      </p>
+                    </motion.div>
+                  );
+                }
+                if (o.kind === "badge") {
+                  return (
+                    <motion.div
+                      key={`${current.label}-badge-${i}`}
+                      initial={{ opacity: 0, y: 6, scale: 0.96 }}
+                      animate={{ opacity: 1, y: 0, scale: 1 }}
+                      exit={{ opacity: 0, y: -6, scale: 0.98 }}
+                      transition={{ duration: 0.7, delay: o.delay, ease: [0.25, 0.4, 0.25, 1] }}
+                      style={style}
+                      className="absolute z-10 inline-flex items-center gap-1.5 rounded-full bg-card/95 backdrop-blur border border-primary/15 shadow-soft px-3 py-1.5 text-[11px] font-medium text-foreground"
+                    >
+                      <span aria-hidden>{o.icon}</span>
+                      <span>{o.text}</span>
+                    </motion.div>
+                  );
+                }
+                return (
+                  <motion.div
+                    key={`${current.label}-hl-${i}`}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.9, delay: o.delay }}
+                    style={style}
+                    className="absolute z-10 rounded-xl border border-primary/40 bg-primary/10 backdrop-blur-sm px-3 py-2 text-center text-[11px] font-medium text-primary shadow-[0_0_30px_hsl(270,40%,60%,0.35)]"
+                  >
+                    {o.text}
+                  </motion.div>
+                );
+              })}
             </AnimatePresence>
 
             {/* Hotspot */}
@@ -229,7 +324,7 @@ const PhoneMockup = () => {
                 animate={{ scale: 1, opacity: 1 }}
                 exit={{ scale: 0, opacity: 0 }}
                 style={{ top: current.hotspot.top, left: current.hotspot.left }}
-                className="absolute -translate-x-1/2 -translate-y-1/2 z-10"
+                className="absolute -translate-x-1/2 -translate-y-1/2 z-20"
                 aria-hidden
               >
                 <span className="relative flex h-4 w-4">
@@ -248,7 +343,7 @@ const PhoneMockup = () => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 8 }}
                   transition={{ duration: 0.3 }}
-                  className="absolute left-4 right-4 bottom-8 z-20 bg-card/95 backdrop-blur-md rounded-2xl p-4 shadow-soft border border-primary/10 text-left"
+                  className="absolute left-4 right-4 bottom-8 z-30 bg-card/95 backdrop-blur-md rounded-2xl p-4 shadow-soft border border-primary/10 text-left"
                   role="status"
                 >
                   <div className="flex items-start gap-3">
@@ -269,10 +364,13 @@ const PhoneMockup = () => {
         </button>
 
         {/* Screen dots */}
-        <div className="flex justify-center gap-2 mt-6" aria-hidden>
-          {screens.map((s, i) => (
-            <span
+        <div className="flex justify-center gap-2 mt-6">
+          {scenes.map((s, i) => (
+            <button
               key={s.label}
+              type="button"
+              aria-label={`Show ${s.label}`}
+              onClick={() => goTo(i)}
               className={`h-1.5 rounded-full transition-all duration-500 ${
                 i === index ? "w-6 bg-primary" : "w-1.5 bg-primary/25"
               }`}
