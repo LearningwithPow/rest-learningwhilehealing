@@ -1,4 +1,5 @@
 import { ShieldCheck, Sparkles } from "lucide-react";
+import CountdownTimer from "@/components/CountdownTimer";
 import { Button } from "@/components/ui/button";
 import ScrollReveal from "@/components/ScrollReveal";
 
