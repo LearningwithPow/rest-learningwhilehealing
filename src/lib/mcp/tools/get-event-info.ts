@@ -18,7 +18,7 @@ export default defineTool({
           sessionTime: "7:00 PM – 9:30 PM",
           timezone: "Asia/Manila (PHT)",
           format: "Live on Zoom",
-          earlyBirdDeadline: "July 24, 2026 (11:59 PM PHT)",
+          earlyBirdDeadline: "July 25, 2026 (11:59 PM PHT)",
         }),
       },
     ],

@@ -25,7 +25,7 @@ var get_event_info_default = defineTool({
           sessionTime: "7:00 PM \u2013 9:30 PM",
           timezone: "Asia/Manila (PHT)",
           format: "Live on Zoom",
-          earlyBirdDeadline: "July 24, 2026 (11:59 PM PHT)"
+          earlyBirdDeadline: "July 25, 2026 (11:59 PM PHT)"
         })
       }
     ]
@@ -48,7 +48,7 @@ var get_pricing_default = defineTool2({
           currency: "PHP",
           earlyBirdPrice: 999,
           regularPrice: 1499,
-          earlyBirdDeadline: "July 24, 2026 (11:59 PM PHT)",
+          earlyBirdDeadline: "July 25, 2026 (11:59 PM PHT)",
           paymentMethods: ["Xendit", "GCash", "Maya", "Debit Cards"]
         })
       }
