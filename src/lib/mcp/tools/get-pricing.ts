@@ -14,7 +14,7 @@ export default defineTool({
           currency: "PHP",
           earlyBirdPrice: 999,
           regularPrice: 1499,
-          earlyBirdDeadline: "July 24, 2026 (11:59 PM PHT)",
+          earlyBirdDeadline: "July 25, 2026 (11:59 PM PHT)",
           paymentMethods: ["Xendit", "GCash", "Maya", "Debit Cards"],
         }),
       },
