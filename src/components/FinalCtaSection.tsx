@@ -35,6 +35,14 @@ const FinalCtaSection = () => {
         </ScrollReveal>
         
         <ScrollReveal delay={0.2}>
+          <div className="mb-6 sm:mb-8">
+            <CountdownTimer
+              targetDate="2026-07-25T23:59:00+08:00"
+              label="Early Bird Rate Ends In"
+              endedMessage="Early bird rate has ended. Secure your seat at the regular price."
+              variant="minimal"
+            />
+          </div>
           <a href="https://checkout.xendit.co/od/RESTJuly2026">
             <Button variant="calm" size="calm" className="text-base">
               Yes, I Need This Reset
