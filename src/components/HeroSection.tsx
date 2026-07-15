@@ -52,9 +52,9 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.5, ease: [0.25, 0.4, 0.25, 1] }}
         >
           <CountdownTimer
-            targetDate="2026-07-28T19:00:00+08:00"
-            label="REST Reset Begins In"
-            endedMessage="REST Reset is now live! 🙏"
+            targetDate="2026-07-25T23:59:00+08:00"
+            label="Early Bird Rate Ends In"
+            endedMessage="Early bird rate has ended. Secure your seat at the regular price."
             variant="minimal"
           />
         </motion.div>
