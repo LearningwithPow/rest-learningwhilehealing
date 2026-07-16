@@ -1,5 +1,6 @@
 import ScrollReveal from "@/components/ScrollReveal";
 import { Button } from "@/components/ui/button";
+import { trackLead } from "@/lib/meta-pixel";
 
 const PainResonanceSection = () => {
   const points = [
@@ -65,6 +66,7 @@ const PainResonanceSection = () => {
         <ScrollReveal delay={0.55}>
           <a
             href="https://checkout.xendit.co/od/RESTJuly2026"
+            onClick={trackLead}
           >
             <Button variant="calm" size="calm">
               Yes, I Need This Reset
