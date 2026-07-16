@@ -2,6 +2,7 @@ import { Check, Timer } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ScrollReveal from "@/components/ScrollReveal";
 import CountdownTimer from "@/components/CountdownTimer";
+import { trackLead } from "@/lib/meta-pixel";
 
 const ValueStackPremiumSection = () => {
   const inclusions = [
@@ -104,6 +105,7 @@ const ValueStackPremiumSection = () => {
 
               <a
                 href="https://checkout.xendit.co/od/RESTJuly2026"
+                onClick={trackLead}
                 className="block w-full"
               >
                 <Button variant="calm" size="calm" className="w-full text-base">
