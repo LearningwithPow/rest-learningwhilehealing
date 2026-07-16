@@ -99,6 +99,7 @@ const HeroSection = () => {
         >
           <a
             href="https://checkout.xendit.co/od/RESTJuly2026"
+            onClick={trackLead}
           >
             <Button variant="calm" size="calm">
               Yes, I Need This Reset

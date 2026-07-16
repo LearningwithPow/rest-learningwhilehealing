@@ -2,6 +2,7 @@ import { ShieldCheck, Sparkles } from "lucide-react";
 import CountdownTimer from "@/components/CountdownTimer";
 import { Button } from "@/components/ui/button";
 import ScrollReveal from "@/components/ScrollReveal";
+import { trackLead } from "@/lib/meta-pixel";
 
 const FinalCtaSection = () => {
   return (
