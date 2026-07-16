@@ -2,6 +2,7 @@ import { ShieldCheck, Sparkles } from "lucide-react";
 import CountdownTimer from "@/components/CountdownTimer";
 import { Button } from "@/components/ui/button";
 import ScrollReveal from "@/components/ScrollReveal";
+import { trackLead } from "@/lib/meta-pixel";
 
 const FinalCtaSection = () => {
   return (
@@ -43,7 +44,7 @@ const FinalCtaSection = () => {
               variant="minimal"
             />
           </div>
-          <a href="https://checkout.xendit.co/od/RESTJuly2026">
+          <a href="https://checkout.xendit.co/od/RESTJuly2026" onClick={trackLead}>
             <Button variant="calm" size="calm" className="text-base">
               Yes, I Need This Reset
             </Button>

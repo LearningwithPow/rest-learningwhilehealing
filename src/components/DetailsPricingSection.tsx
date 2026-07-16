@@ -1,6 +1,7 @@
 import { Video, Users, Clock, Calendar, Sparkles, ShieldCheck, Flame, Timer } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ScrollReveal from "@/components/ScrollReveal";
+import { trackLead } from "@/lib/meta-pixel";
 import zoomSessionImg from "@/assets/zoom-coaching-session.jpg";
 
 const DetailsPricingSection = () => {
@@ -108,7 +109,7 @@ const DetailsPricingSection = () => {
 
         {/* CTA */}
         <ScrollReveal delay={0.35}>
-          <a href="https://checkout.xendit.co/od/RESTJuly2026">
+          <a href="https://checkout.xendit.co/od/RESTJuly2026" onClick={trackLead}>
             <Button variant="calm" size="calm">
               Reserve My Spot
             </Button>

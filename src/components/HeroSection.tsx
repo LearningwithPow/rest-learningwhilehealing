@@ -1,5 +1,6 @@
 import heroImage from "@/assets/hero-calm-woman.jpg";
 import { Button } from "@/components/ui/button";
+import { trackLead } from "@/lib/meta-pixel";
 import { motion } from "framer-motion";
 import CountdownTimer from "@/components/CountdownTimer";
 
@@ -98,6 +99,7 @@ const HeroSection = () => {
         >
           <a
             href="https://checkout.xendit.co/od/RESTJuly2026"
+            onClick={trackLead}
           >
             <Button variant="calm" size="calm">
               Yes, I Need This Reset
