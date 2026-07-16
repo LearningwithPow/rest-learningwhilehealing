@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { X, Timer, Gift } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { trackLead } from "@/lib/meta-pixel";
 
 const STORAGE_KEY = "rest_reset_popup_shown_v2";
 
@@ -86,7 +87,10 @@ const ExitIntentPopup = () => {
 
         <a
           href="https://checkout.xendit.co/od/RESTJuly2026"
-          onClick={() => setOpen(false)}
+          onClick={() => {
+            setOpen(false);
+            trackLead();
+          }}
         >
           <Button variant="calm" size="calm" className="w-full">
             Yes, I Need This Reset

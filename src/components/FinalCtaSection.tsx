@@ -44,7 +44,7 @@ const FinalCtaSection = () => {
               variant="minimal"
             />
           </div>
-          <a href="https://checkout.xendit.co/od/RESTJuly2026">
+          <a href="https://checkout.xendit.co/od/RESTJuly2026" onClick={trackLead}>
             <Button variant="calm" size="calm" className="text-base">
               Yes, I Need This Reset
             </Button>
