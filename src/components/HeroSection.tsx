@@ -1,5 +1,6 @@
 import heroImage from "@/assets/hero-calm-woman.jpg";
 import { Button } from "@/components/ui/button";
+import { trackLead } from "@/lib/meta-pixel";
 import { motion } from "framer-motion";
 import CountdownTimer from "@/components/CountdownTimer";
 
